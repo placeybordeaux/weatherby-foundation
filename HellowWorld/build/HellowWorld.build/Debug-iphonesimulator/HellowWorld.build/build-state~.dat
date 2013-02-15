@@ -1,0 +1,258 @@
+THellowWorld
+v7
+r0
+t382640684.869058
+cCheck dependencies
+cProcessInfoPlistFile /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/Info.plist HellowWorld-Info.plist
+cCompileXIB /nethome/pmlb3/Documents/HellowWorld/MainWindow.xib
+cCompileXIB /nethome/pmlb3/Documents/HellowWorld/HellowWorldViewController.xib
+cProcessPCH /var/folders/Jg/JgWfh5geEPiRugu6oJXzZ3P6evE/-Caches-/com.apple.Xcode.1455991732/SharedPrecompiledHeaders/HellowWorld_Prefix-arotvegranxzgrdlfodsaicfvkul/HellowWorld_Prefix.pch.gch HellowWorld_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/main.o /nethome/pmlb3/Documents/HellowWorld/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorldAppDelegate.o /nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorldViewController.o /nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld normal i386
+cGenerateDSYMFile /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app.dSYM /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld
+cTouch /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
+c000000004C3F597D0000000000000132
+t1279220093
+s306
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFDFE39000000000027C7D0
+t1274936889
+s2607056
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFDFE7C000000000029D5D0
+t1274936956
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFDFE6E0000000000001466
+t1274936942
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C0470BB00000000000009CD
+t1275359419
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471620000000001D47210
+t1275359586
+s30700048
+
+N/nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldAppDelegate.h
+c00000000511E68A90000000000000202
+t1360947369
+s514
+i<UIKit/UIKit.h>
+
+N/nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldAppDelegate.m
+c00000000511E68A90000000000000AAA
+t1360947369
+s2730
+i"HellowWorldAppDelegate.h"
+i"HellowWorldViewController.h"
+
+N/nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldViewController.h
+c00000000511E6A1E00000000000001D4
+t1360947742
+s468
+i<UIKit/UIKit.h>
+
+N/nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldViewController.m
+c00000000511E6AAB0000000000000643
+t1360947883
+s1603
+i"HellowWorldViewController.h"
+
+N/nethome/pmlb3/Documents/HellowWorld/HellowWorldViewController.xib
+c00000000511E68A90000000000001A55
+t1360947369
+s6741
+
+N/nethome/pmlb3/Documents/HellowWorld/HellowWorld_Prefix.pch
+c00000000511E68A900000000000000BF
+t1360947369
+s191
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/nethome/pmlb3/Documents/HellowWorld/MainWindow.xib
+c00000000511E68A90000000000004E59
+t1360947369
+s20057
+
+N/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app
+t1360947884
+s238
+
+N/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app.dSYM
+t1360947884
+s102
+
+N/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld
+t1360947884
+s18272
+
+N/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorldViewController.nib
+t1360947884
+s795
+
+N/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/Info.plist
+t1360947883
+s607
+
+N/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/MainWindow.nib
+t1360947884
+s1131
+
+N/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/PkgInfo
+t1360947883
+s8
+
+N/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorld.LinkFileList
+c00000000511E6AAB00000000000001A7
+t1360947883
+s423
+
+N/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorldAppDelegate.o
+t1360947884
+s48024
+
+N/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorldViewController.o
+t1360947884
+s37848
+
+N/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/main.o
+t1360947884
+s6300
+
+N/nethome/pmlb3/Documents/HellowWorld/main.m
+c00000000511E68A90000000000000178
+t1360947369
+s376
+i<UIKit/UIKit.h>
+
+N/var/folders/Jg/JgWfh5geEPiRugu6oJXzZ3P6evE/-Caches-/com.apple.Xcode.1455991732/SharedPrecompiledHeaders/HellowWorld_Prefix-arotvegranxzgrdlfodsaicfvkul/HellowWorld_Prefix.pch.gch
+t1360947884
+s15232016
+
+NHellowWorld-Info.plist
+c00000000511E68A9000000000000038D
+t1360947369
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies382640683#382640683#0(0"0(0#1#0"8624847520#0"0#
+
+CCompileC build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorldAppDelegate.o /nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s382640684.751610
+e382640684.830528
+r1
+xCompileC
+xbuild/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorldAppDelegate.o
+x/nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldAppDelegate.m382640684#382640684#0(0"0(0#0#69"/nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldAppDelegate.m8594929344#2010"    cd /nethome/pmlb3/Documents/HellowWorld    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-generated-files.hmap -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-own-target-headers.hmap -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-all-target-headers.hmap -iquote /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-project-headers.hmap -F/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator -I/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/include -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/DerivedSources/i386 -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/DerivedSources -include /var/folders/Jg/JgWfh5geEPiRugu6oJXzZ3P6evE/-Caches-/com.apple.Xcode.1455991732/SharedPrecompiledHeaders/HellowWorld_Prefix-arotvegranxzgrdlfodsaicfvkul/HellowWorld_Prefix.pch -c /nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldAppDelegate.m -o /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorldAppDelegate.o0#
+
+CCompileC build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorldViewController.o /nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s382640684.752370
+e382640684.826313
+r1
+xCompileC
+xbuild/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorldViewController.o
+x/nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldViewController.m382640684#382640684#0(0"0(0#0#72"/nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldViewController.m8595169216#2016"    cd /nethome/pmlb3/Documents/HellowWorld    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-generated-files.hmap -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-own-target-headers.hmap -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-all-target-headers.hmap -iquote /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-project-headers.hmap -F/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator -I/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/include -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/DerivedSources/i386 -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/DerivedSources -include /var/folders/Jg/JgWfh5geEPiRugu6oJXzZ3P6evE/-Caches-/com.apple.Xcode.1455991732/SharedPrecompiledHeaders/HellowWorld_Prefix-arotvegranxzgrdlfodsaicfvkul/HellowWorld_Prefix.pch -c /nethome/pmlb3/Documents/HellowWorld/Classes/HellowWorldViewController.m -o /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorldViewController.o0#
+
+CCompileC build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/main.o /nethome/pmlb3/Documents/HellowWorld/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s382640684.750633
+e382640684.808361
+r1
+xCompileC
+xbuild/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/main.o
+x/nethome/pmlb3/Documents/HellowWorld/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /nethome/pmlb3/Documents/HellowWorld/main.m382640684#382640684#0(0"0(0#0#43"/nethome/pmlb3/Documents/HellowWorld/main.m8599024576#1966"    cd /nethome/pmlb3/Documents/HellowWorld    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-generated-files.hmap -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-own-target-headers.hmap -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-all-target-headers.hmap -iquote /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-project-headers.hmap -F/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator -I/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/include -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/DerivedSources/i386 -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/DerivedSources -include /var/folders/Jg/JgWfh5geEPiRugu6oJXzZ3P6evE/-Caches-/com.apple.Xcode.1455991732/SharedPrecompiledHeaders/HellowWorld_Prefix-arotvegranxzgrdlfodsaicfvkul/HellowWorld_Prefix.pch -c /nethome/pmlb3/Documents/HellowWorld/main.m -o /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /nethome/pmlb3/Documents/HellowWorld/HellowWorldViewController.xib
+s382640683.247683
+e382640684.071751
+r1
+xCompileXIB
+x/nethome/pmlb3/Documents/HellowWorld/HellowWorldViewController.xib
+o2013-02-15 12:04:44.012 Interface Builder Cocoa Touch Tool[1118:1b03] CFPreferences: user home directory at file://localhost/nethome/pmlb3/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF07#2@40"CompileXIB HellowWorldViewController.xib382640683#382640684#0(241"2013-02-15 12:04:44.012 Interface Builder Cocoa Touch Tool[1118:1b03] CFPreferences: user home directory at file://localhost/nethome/pmlb3/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.0(0#0#66"/nethome/pmlb3/Documents/HellowWorld/HellowWorldViewController.xib8624381472#598"    cd /nethome/pmlb3/Documents/HellowWorld    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorldViewController.nib /nethome/pmlb3/Documents/HellowWorld/HellowWorldViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CCompileXIB /nethome/pmlb3/Documents/HellowWorld/MainWindow.xib
+s382640683.246871
+e382640684.092572
+r1
+xCompileXIB
+x/nethome/pmlb3/Documents/HellowWorld/MainWindow.xib
+o2013-02-15 12:04:44.029 Interface Builder Cocoa Touch Tool[1119:1c03] CFPreferences: user home directory at file://localhost/nethome/pmlb3/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF07#2@25"CompileXIB MainWindow.xib382640683#382640684#0(241"2013-02-15 12:04:44.029 Interface Builder Cocoa Touch Tool[1119:1c03] CFPreferences: user home directory at file://localhost/nethome/pmlb3/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.0(0#0#51"/nethome/pmlb3/Documents/HellowWorld/MainWindow.xib8625437152#568"    cd /nethome/pmlb3/Documents/HellowWorld    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/MainWindow.nib /nethome/pmlb3/Documents/HellowWorld/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
+
+CGenerateDSYMFile /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app.dSYM /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld
+s382640684.851480
+e382640684.866200
+r1
+xGenerateDSYMFile
+x/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app.dSYM
+x/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld
+lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/HellowWorld.app.dSYM build/Debug-iphonesimulator/HellowWorld.app/HellowWorld382640684#382640684#0(0"0(0#0#92"/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld8599081568#389"    cd /nethome/pmlb3/Documents/HellowWorld    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld -o /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app.dSYM0#
+
+CLd /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld normal i386
+s382640684.830622
+e382640684.851386
+r1
+xLd
+x/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld
+xnormal
+xi386
+lSLF07#2@97"Link /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld382640684#382640684#0(0"0(0#0#0"8615974272#910"    cd /nethome/pmlb3/Documents/HellowWorld    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -L/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator -F/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator -filelist /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/Objects-normal/i386/HellowWorld.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/HellowWorld0#
+
+CProcessInfoPlistFile /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/Info.plist HellowWorld-Info.plist
+s382640683.243386
+e382640683.246706
+r1
+xProcessInfoPlistFile
+x/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/Info.plist
+xHellowWorld-Info.plist
+lSLF07#2@30"Process HellowWorld-Info.plist382640683#382640683#0(0"0(0#0#59"/nethome/pmlb3/Documents/HellowWorld/HellowWorld-Info.plist8627256288#485"    cd /nethome/pmlb3/Documents/HellowWorld    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility HellowWorld-Info.plist -genpkginfo /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app/Info.plist0#
+
+CProcessPCH /var/folders/Jg/JgWfh5geEPiRugu6oJXzZ3P6evE/-Caches-/com.apple.Xcode.1455991732/SharedPrecompiledHeaders/HellowWorld_Prefix-arotvegranxzgrdlfodsaicfvkul/HellowWorld_Prefix.pch.gch HellowWorld_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s382640684.092703
+e382640684.750440
+r1
+xProcessPCH
+x/var/folders/Jg/JgWfh5geEPiRugu6oJXzZ3P6evE/-Caches-/com.apple.Xcode.1455991732/SharedPrecompiledHeaders/HellowWorld_Prefix-arotvegranxzgrdlfodsaicfvkul/HellowWorld_Prefix.pch.gch
+xHellowWorld_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile HellowWorld_Prefix.pch382640684#382640684#0(0"0(0#0#59"/nethome/pmlb3/Documents/HellowWorld/HellowWorld_Prefix.pch8626848384#1856"    cd /nethome/pmlb3/Documents/HellowWorld    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-generated-files.hmap -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-own-target-headers.hmap -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-all-target-headers.hmap -iquote /nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/HellowWorld-project-headers.hmap -F/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator -I/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/include -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/DerivedSources/i386 -I/nethome/pmlb3/Documents/HellowWorld/build/HellowWorld.build/Debug-iphonesimulator/HellowWorld.build/DerivedSources -c /nethome/pmlb3/Documents/HellowWorld/HellowWorld_Prefix.pch -o /var/folders/Jg/JgWfh5geEPiRugu6oJXzZ3P6evE/-Caches-/com.apple.Xcode.1455991732/SharedPrecompiledHeaders/HellowWorld_Prefix-arotvegranxzgrdlfodsaicfvkul/HellowWorld_Prefix.pch.gch0#
+
+CTouch /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app
+s382640684.866297
+e382640684.869034
+r1
+xTouch
+x/nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app
+lSLF07#2@86"Touch /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app382640684#382640684#0(0"0(0#0#0"8590367168#278"    cd /nethome/pmlb3/Documents/HellowWorld    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /nethome/pmlb3/Documents/HellowWorld/build/Debug-iphonesimulator/HellowWorld.app0#
+
