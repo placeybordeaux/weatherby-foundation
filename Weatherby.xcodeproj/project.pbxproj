@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54234B2B16D6BA7400CACF19 /* 001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 54234B2A16D6BA7400CACF19 /* 001.mp3 */; };
 		5423E44C16D6AB21001E6EA6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5423E44B16D6AB21001E6EA6 /* AudioToolbox.framework */; };
 		54F2001816D2E4B3001121DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001716D2E4B3001121DA /* UIKit.framework */; };
 		54F2001A16D2E4B3001121DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001916D2E4B3001121DA /* Foundation.framework */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		54234B2A16D6BA7400CACF19 /* 001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 001.mp3; path = "../../../Downloads/Rosenbruch Wildlife/MP3_Tour/001.mp3"; sourceTree = "<group>"; };
 		5423E44B16D6AB21001E6EA6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		54F2001416D2E4B3001121DA /* Weatherby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2001716D2E4B3001121DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -105,7 +103,6 @@
 		54F2001E16D2E4B3001121DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				54234B2A16D6BA7400CACF19 /* 001.mp3 */,
 				54F2001F16D2E4B3001121DA /* Weatherby-Info.plist */,
 				54F2002016D2E4B3001121DA /* InfoPlist.strings */,
 				54F2002316D2E4B3001121DA /* main.m */,
@@ -174,7 +171,6 @@
 				54F2002E16D2E4B3001121DA /* Default-568h@2x.png in Resources */,
 				54F2003116D2E4B3001121DA /* MainStoryboard_iPhone.storyboard in Resources */,
 				54F2003416D2E4B3001121DA /* MainStoryboard_iPad.storyboard in Resources */,
-				54234B2B16D6BA7400CACF19 /* 001.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
