@@ -101,7 +101,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fQh-tI-fU1">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="69O-Qp-8mz"/>
                                     <constraint firstAttribute="height" constant="416" id="rq0-Ga-s97"/>
                                 </constraints>
                                 <prototypes>
@@ -115,6 +114,10 @@
                                         </view>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ArM-FE-SsA" id="KmL-9z-tIC"/>
+                                    <outlet property="delegate" destination="ArM-FE-SsA" id="NGt-qH-KgE"/>
+                                </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKp-gY-0jh">
                                 <items>
@@ -139,10 +142,11 @@
                             <constraint firstItem="qAO-jK-pLH" firstAttribute="bottom" secondItem="6dH-94-fhI" secondAttribute="bottom" type="default" id="29z-EH-9ln"/>
                             <constraint firstItem="jKp-gY-0jh" firstAttribute="leading" secondItem="6dH-94-fhI" secondAttribute="leading" type="default" id="2gr-LY-5Jv"/>
                             <constraint firstItem="qAO-jK-pLH" firstAttribute="trailing" secondItem="6dH-94-fhI" secondAttribute="trailing" type="default" id="3gF-dy-CjV"/>
-                            <constraint firstItem="fQh-tI-fU1" firstAttribute="leading" secondItem="6dH-94-fhI" secondAttribute="leading" constant="-7" id="4Ql-xe-sBs"/>
                             <constraint firstItem="qAO-jK-pLH" firstAttribute="leading" secondItem="6dH-94-fhI" secondAttribute="leading" type="default" id="Dz9-ey-pmD"/>
                             <constraint firstItem="t8c-qr-i1l" firstAttribute="trailing" secondItem="6dH-94-fhI" secondAttribute="trailing" type="default" id="Len-un-xQY"/>
                             <constraint firstItem="jKp-gY-0jh" firstAttribute="top" secondItem="6dH-94-fhI" secondAttribute="top" type="default" id="Nfs-8W-aBP"/>
+                            <constraint firstItem="fQh-tI-fU1" firstAttribute="trailing" secondItem="6dH-94-fhI" secondAttribute="trailing" type="default" id="Ufd-49-9DG"/>
+                            <constraint firstItem="fQh-tI-fU1" firstAttribute="leading" secondItem="6dH-94-fhI" secondAttribute="leading" type="default" id="Z5F-5a-RYJ"/>
                             <constraint firstItem="t8c-qr-i1l" firstAttribute="leading" secondItem="6dH-94-fhI" secondAttribute="leading" type="default" id="eoN-GO-TE5"/>
                             <constraint firstItem="fQh-tI-fU1" firstAttribute="top" secondItem="t8c-qr-i1l" secondAttribute="bottom" type="default" id="lgv-lx-zvL"/>
                             <constraint firstItem="t8c-qr-i1l" firstAttribute="top" secondItem="jKp-gY-0jh" secondAttribute="bottom" type="default" id="r9H-El-PjZ"/>
@@ -194,9 +198,6 @@
                                 </items>
                             </toolbar>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nWz-fe-UtH">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="E5y-bN-Mc8"/>
-                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -205,13 +206,14 @@
                             <constraint firstItem="GAX-Yd-kIu" firstAttribute="top" secondItem="nWz-fe-UtH" secondAttribute="bottom" type="default" id="0Qe-8G-ghO"/>
                             <constraint firstItem="Gho-tw-Ja5" firstAttribute="top" secondItem="yum-Md-U6E" secondAttribute="top" type="default" id="2ar-Zs-npl"/>
                             <constraint firstItem="Ila-LV-FXq" firstAttribute="bottom" secondItem="yum-Md-U6E" secondAttribute="bottom" type="default" id="2uR-HF-sxy"/>
-                            <constraint firstItem="nWz-fe-UtH" firstAttribute="leading" secondItem="yum-Md-U6E" secondAttribute="leading" constant="6" id="6fF-YN-XWO"/>
+                            <constraint firstItem="nWz-fe-UtH" firstAttribute="leading" secondItem="yum-Md-U6E" secondAttribute="leading" type="default" id="6fv-VN-eIf"/>
                             <constraint firstItem="nWz-fe-UtH" firstAttribute="top" secondItem="yum-Md-U6E" secondAttribute="top" constant="39" id="8zP-cY-gzP"/>
                             <constraint firstItem="GAX-Yd-kIu" firstAttribute="trailing" secondItem="yum-Md-U6E" secondAttribute="trailing" type="default" id="MQR-46-dXR"/>
                             <constraint firstItem="Gho-tw-Ja5" firstAttribute="trailing" secondItem="yum-Md-U6E" secondAttribute="trailing" type="default" id="WCR-jG-VU6"/>
                             <constraint firstItem="Ila-LV-FXq" firstAttribute="leading" secondItem="yum-Md-U6E" secondAttribute="leading" type="default" id="cX1-7Z-7pw"/>
                             <constraint firstItem="Gho-tw-Ja5" firstAttribute="leading" secondItem="yum-Md-U6E" secondAttribute="leading" type="default" id="kxh-2F-jBh"/>
                             <constraint firstItem="GAX-Yd-kIu" firstAttribute="leading" secondItem="yum-Md-U6E" secondAttribute="leading" type="default" id="mjF-uK-eJk"/>
+                            <constraint firstItem="nWz-fe-UtH" firstAttribute="trailing" secondItem="yum-Md-U6E" secondAttribute="trailing" type="default" id="nWJ-8q-ivr"/>
                             <constraint firstItem="Ila-LV-FXq" firstAttribute="trailing" secondItem="yum-Md-U6E" secondAttribute="trailing" type="default" id="p80-Et-Phi"/>
                         </constraints>
                     </view>
@@ -259,20 +261,12 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="uvV-fA-Ni2"/>
+        <segue reference="DBb-d3-Lu6"/>
     </inferredMetricsTieBreakers>
 </document>
