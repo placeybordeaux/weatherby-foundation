@@ -20,6 +20,7 @@
 		54F2003116D2E4B3001121DA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F2002F16D2E4B3001121DA /* MainStoryboard_iPhone.storyboard */; };
 		54F2003416D2E4B3001121DA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F2003216D2E4B3001121DA /* MainStoryboard_iPad.storyboard */; };
 		54F2003716D2E4B3001121DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2003616D2E4B3001121DA /* ViewController.m */; };
+		D945BE4416DF04EA005F6164 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D945BE4316DF04EA005F6164 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		54F2003316D2E4B3001121DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		54F2003516D2E4B3001121DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		54F2003616D2E4B3001121DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D945BE4316DF04EA005F6164 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		54F2001E16D2E4B3001121DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D945BE4316DF04EA005F6164 /* logo.png */,
 				54F2001F16D2E4B3001121DA /* Weatherby-Info.plist */,
 				54F2002016D2E4B3001121DA /* InfoPlist.strings */,
 				54F2002316D2E4B3001121DA /* main.m */,
@@ -171,6 +174,7 @@
 				54F2002E16D2E4B3001121DA /* Default-568h@2x.png in Resources */,
 				54F2003116D2E4B3001121DA /* MainStoryboard_iPhone.storyboard in Resources */,
 				54F2003416D2E4B3001121DA /* MainStoryboard_iPad.storyboard in Resources */,
+				D945BE4416DF04EA005F6164 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
