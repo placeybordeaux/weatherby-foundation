@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <DropboxSDK/DropboxSDK.h>
 
 @interface ViewController ()
 
@@ -31,6 +32,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //[[DBAccountManager sharedManager] linkFromController:@"kDBRootDropbox"];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@", [paths objectAtIndex:0],@"Winners.txt"];
+    
+    // Download and write to file
+    NSURL *url = [NSURL URLWithString:@"https://dl.dropbox.com/s/itoeklwyqnvtk6y/Winners.txt?dl=1"];
+    NSData *urlData = [NSData dataWithContentsOfURL:url];
+    [urlData writeToFile:filePath atomically:YES];
+    NSString* content = [NSString stringWithContentsOfFile:filePath
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:NULL];
+    NSLog(@"%@", content);
 	// Do any additional setup after loading the view, typically from a nib.
     // Populated array data
     self.tableData = @[@"A",@"B",@"C",@"D",@"E"];

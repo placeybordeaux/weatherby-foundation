@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5423E44C16D6AB21001E6EA6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5423E44B16D6AB21001E6EA6 /* AudioToolbox.framework */; };
+		546A058316DFC9D3009E488F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546A058216DFC9D3009E488F /* Security.framework */; };
+		546A058516DFC9DA009E488F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546A058416DFC9DA009E488F /* QuartzCore.framework */; };
+		5492B11416E3DB85001DFCBB /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5492B11316E3DB85001DFCBB /* DropboxSDK.framework */; };
 		54F2001816D2E4B3001121DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001716D2E4B3001121DA /* UIKit.framework */; };
 		54F2001A16D2E4B3001121DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001916D2E4B3001121DA /* Foundation.framework */; };
 		54F2001C16D2E4B3001121DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001B16D2E4B3001121DA /* CoreGraphics.framework */; };
@@ -20,11 +23,16 @@
 		54F2003116D2E4B3001121DA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F2002F16D2E4B3001121DA /* MainStoryboard_iPhone.storyboard */; };
 		54F2003416D2E4B3001121DA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F2003216D2E4B3001121DA /* MainStoryboard_iPad.storyboard */; };
 		54F2003716D2E4B3001121DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2003616D2E4B3001121DA /* ViewController.m */; };
+		54FBE0AD16E14624008C0B93 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBE0AC16E14624008C0B93 /* SystemConfiguration.framework */; };
+		54FBE0B116E14F26008C0B93 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBE0B016E14F26008C0B93 /* CFNetwork.framework */; };
 		D945BE4416DF04EA005F6164 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D945BE4316DF04EA005F6164 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5423E44B16D6AB21001E6EA6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		546A058216DFC9D3009E488F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		546A058416DFC9DA009E488F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5492B11316E3DB85001DFCBB /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = "../../Downloads/dropbox-ios-sdk-1.3.3/DropboxSDK.framework"; sourceTree = "<group>"; };
 		54F2001416D2E4B3001121DA /* Weatherby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2001716D2E4B3001121DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54F2001916D2E4B3001121DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,6 +50,8 @@
 		54F2003316D2E4B3001121DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		54F2003516D2E4B3001121DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		54F2003616D2E4B3001121DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		54FBE0AC16E14624008C0B93 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		54FBE0B016E14F26008C0B93 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D945BE4316DF04EA005F6164 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,10 +60,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FBE0B116E14F26008C0B93 /* CFNetwork.framework in Frameworks */,
+				54FBE0AD16E14624008C0B93 /* SystemConfiguration.framework in Frameworks */,
+				546A058516DFC9DA009E488F /* QuartzCore.framework in Frameworks */,
+				546A058316DFC9D3009E488F /* Security.framework in Frameworks */,
 				5423E44C16D6AB21001E6EA6 /* AudioToolbox.framework in Frameworks */,
 				54F2001816D2E4B3001121DA /* UIKit.framework in Frameworks */,
 				54F2001A16D2E4B3001121DA /* Foundation.framework in Frameworks */,
 				54F2001C16D2E4B3001121DA /* CoreGraphics.framework in Frameworks */,
+				5492B11416E3DB85001DFCBB /* DropboxSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 		54F2000B16D2E4B3001121DA = {
 			isa = PBXGroup;
 			children = (
+				54FBE0B016E14F26008C0B93 /* CFNetwork.framework */,
 				54F2001D16D2E4B3001121DA /* Weatherby */,
 				54F2001616D2E4B3001121DA /* Frameworks */,
 				54F2001516D2E4B3001121DA /* Products */,
@@ -80,6 +96,10 @@
 		54F2001616D2E4B3001121DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5492B11316E3DB85001DFCBB /* DropboxSDK.framework */,
+				546A058416DFC9DA009E488F /* QuartzCore.framework */,
+				546A058216DFC9D3009E488F /* Security.framework */,
+				54FBE0AC16E14624008C0B93 /* SystemConfiguration.framework */,
 				5423E44B16D6AB21001E6EA6 /* AudioToolbox.framework */,
 				54F2001716D2E4B3001121DA /* UIKit.framework */,
 				54F2001916D2E4B3001121DA /* Foundation.framework */,
@@ -282,6 +302,11 @@
 		54F2003B16D2E4B3001121DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/dropbox-ios-sdk-1.3.3\"",
+					"\"$(SRCROOT)/../../Downloads/dropbox-ios-sync-sdk-1.0.4\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weatherby/Weatherby-Prefix.pch";
 				INFOPLIST_FILE = "Weatherby/Weatherby-Info.plist";
@@ -293,6 +318,11 @@
 		54F2003C16D2E4B3001121DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/dropbox-ios-sdk-1.3.3\"",
+					"\"$(SRCROOT)/../../Downloads/dropbox-ios-sync-sdk-1.0.4\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weatherby/Weatherby-Prefix.pch";
 				INFOPLIST_FILE = "Weatherby/Weatherby-Info.plist";
