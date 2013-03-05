@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AudioToolbox/AudioToolbox.h>
 
-@interface ViewController : UIViewController {
-    
-}
+@interface ViewController : UIViewController
 
--(IBAction)play;
+
 @end

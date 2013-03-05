@@ -24,7 +24,7 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.50000000000000011" contentMode="scaleAspectFit" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vcr-aZ-Xbt">
@@ -93,15 +93,15 @@
                             <constraint firstAttribute="bottom" secondItem="riA-Jy-lPg" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="9hr-Kh-7zJ"/>
                             <constraint firstItem="vcr-aZ-Xbt" firstAttribute="centerX" secondItem="UVD-vK-1Su" secondAttribute="centerX" type="default" id="AFb-lH-mz7"/>
                             <constraint firstAttribute="trailing" secondItem="UVD-vK-1Su" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="AVR-MW-lhh"/>
-                            <constraint firstItem="UVD-vK-1Su" firstAttribute="top" secondItem="vcr-aZ-Xbt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="AkW-bC-xdG"/>
                             <constraint firstAttribute="bottom" secondItem="Fyg-3v-s5a" secondAttribute="bottom" constant="137" id="EPH-75-6WQ"/>
                             <constraint firstAttribute="trailing" secondItem="riA-Jy-lPg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Erg-4U-QFb"/>
                             <constraint firstItem="L3P-yn-0sd" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="HdP-2l-6pf"/>
-                            <constraint firstItem="vcr-aZ-Xbt" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="L0x-dI-7Ig"/>
+                            <constraint firstAttribute="bottom" secondItem="UVD-vK-1Su" secondAttribute="bottom" constant="197" id="Ild-r9-qFW"/>
                             <constraint firstItem="riA-Jy-lPg" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="MaT-ZS-mFF"/>
                             <constraint firstAttribute="trailing" secondItem="Fyg-3v-s5a" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="WCv-Uu-YrQ"/>
                             <constraint firstItem="UVD-vK-1Su" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hFb-eQ-18D"/>
                             <constraint firstAttribute="trailing" secondItem="L3P-yn-0sd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hhu-ZD-bZf"/>
+                            <constraint firstItem="vcr-aZ-Xbt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="13" id="ie6-Vq-I5W"/>
                             <constraint firstItem="Fyg-3v-s5a" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="txU-Qd-xeJ"/>
                         </constraints>
                     </view>
@@ -116,7 +116,7 @@
             <objects>
                 <viewController id="ArM-FE-SsA" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6dH-94-fhI">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fQh-tI-fU1">
@@ -125,14 +125,17 @@
                                     <constraint firstAttribute="height" constant="460" id="cib-hQ-dio"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="oe1-de-KXQ">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" id="oe1-de-KXQ">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="Ycg-HL-ZWG" kind="push" identifier="audioplayer" id="pGQ-FA-TYg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -160,12 +163,66 @@
             </objects>
             <point key="canvasLocation" x="-424" y="-791"/>
         </scene>
+        <!--Audio Player View Controller - Audio Player-->
+        <scene sceneID="51f-kS-BDb">
+            <objects>
+                <viewController storyboardIdentifier="Audio Player" id="Ycg-HL-ZWG" customClass="AudioPlayerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VRd-cF-5f5">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JnX-Qb-o6z">
+                                <items>
+                                    <barButtonItem systemItem="play" id="rWy-gL-p9G">
+                                        <connections>
+                                            <action selector="playButton:" destination="Ycg-HL-ZWG" id="1WP-4Z-ftP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" systemItem="pause" id="kUd-bz-N6Q">
+                                        <connections>
+                                            <action selector="pauseButton:" destination="Ycg-HL-ZWG" id="pKe-DD-sca"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Stop" id="Kiu-ms-gWP">
+                                        <connections>
+                                            <action selector="stopButton:" destination="Ycg-HL-ZWG" id="324-GF-3FM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="zPd-a2-i4Q">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="bfU-jh-l1v">
+                                            <rect key="frame" x="146" y="10" width="171" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </slider>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xt6-jA-36k">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="291" id="8vH-Pm-B02"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Xt6-jA-36k" secondAttribute="bottom" constant="64" id="HXl-rT-WWn"/>
+                            <constraint firstItem="Xt6-jA-36k" firstAttribute="centerX" secondItem="VRd-cF-5f5" secondAttribute="centerX" type="default" id="L8u-Nj-63c"/>
+                            <constraint firstItem="JnX-Qb-o6z" firstAttribute="leading" secondItem="VRd-cF-5f5" secondAttribute="leading" type="default" id="Ou3-yf-o34"/>
+                            <constraint firstItem="JnX-Qb-o6z" firstAttribute="bottom" secondItem="VRd-cF-5f5" secondAttribute="bottom" type="default" id="SJl-sf-QD3"/>
+                            <constraint firstItem="Xt6-jA-36k" firstAttribute="centerX" secondItem="JnX-Qb-o6z" secondAttribute="centerX" type="default" id="fpe-1T-TNx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Audio Player" id="x7o-lT-5EB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rkA-GY-whf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="-786"/>
+        </scene>
         <!--View Controller - Award Winners-->
         <scene sceneID="JKs-ZX-8b3">
             <objects>
                 <viewController id="ZPc-OK-IiC" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yum-Md-U6E">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GAX-Yd-kIu">
@@ -210,7 +267,7 @@
             <objects>
                 <viewController id="1vg-yW-UZY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Edi-eb-woi">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -225,7 +282,7 @@
             <objects>
                 <viewController id="FdZ-eb-0Tt" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8mD-ka-RbX">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -240,19 +297,32 @@
         <image name="logo.png" width="194" height="200"/>
     </resources>
     <classes>
+        <class className="AudioPlayerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioPlayerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pauseButton:"/>
+                <relationship kind="action" name="playButton:"/>
+                <relationship kind="action" name="sliderVolumeAction:"/>
+                <relationship kind="action" name="stopButton:"/>
+                <relationship kind="outlet" name="songProgressView" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="volumeSlider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="action" name="play"/>
+                <relationship kind="action" name="pauseButton:"/>
+                <relationship kind="action" name="playButton:"/>
+                <relationship kind="action" name="stopButton:"/>
             </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
