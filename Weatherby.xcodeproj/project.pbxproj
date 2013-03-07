@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		541DD59316E68A4E0049C01F /* 001.wav in Resources */ = {isa = PBXBuildFile; fileRef = 541DD59216E68A4E0049C01F /* 001.wav */; };
 		5423E44C16D6AB21001E6EA6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5423E44B16D6AB21001E6EA6 /* AudioToolbox.framework */; };
+		543121B416E917B1001B9A26 /* AudioTourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 543121B316E917B1001B9A26 /* AudioTourViewController.m */; };
+		543121B716E9189C001B9A26 /* WinnersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 543121B616E9189C001B9A26 /* WinnersViewController.m */; };
 		546A058316DFC9D3009E488F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546A058216DFC9D3009E488F /* Security.framework */; };
 		546A058516DFC9DA009E488F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546A058416DFC9DA009E488F /* QuartzCore.framework */; };
 		5492B11416E3DB85001DFCBB /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5492B11316E3DB85001DFCBB /* DropboxSDK.framework */; };
@@ -32,8 +33,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		541DD59216E68A4E0049C01F /* 001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 001.wav; path = "../../../Downloads/Rosenbruch Wildlife/WAV/001.wav"; sourceTree = "<group>"; };
 		5423E44B16D6AB21001E6EA6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		543121B216E917B1001B9A26 /* AudioTourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTourViewController.h; sourceTree = "<group>"; };
+		543121B316E917B1001B9A26 /* AudioTourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTourViewController.m; sourceTree = "<group>"; };
+		543121B516E9189C001B9A26 /* WinnersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinnersViewController.h; sourceTree = "<group>"; };
+		543121B616E9189C001B9A26 /* WinnersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinnersViewController.m; sourceTree = "<group>"; };
 		546A058216DFC9D3009E488F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		546A058416DFC9DA009E488F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5492B11316E3DB85001DFCBB /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = "../../Downloads/dropbox-ios-sdk-1.3.3/DropboxSDK.framework"; sourceTree = "<group>"; };
@@ -128,6 +132,10 @@
 				54F2003616D2E4B3001121DA /* ViewController.m */,
 				54FECFA616E675F800E52E31 /* AudioPlayerViewController.h */,
 				54FECFA716E675F800E52E31 /* AudioPlayerViewController.m */,
+				543121B216E917B1001B9A26 /* AudioTourViewController.h */,
+				543121B316E917B1001B9A26 /* AudioTourViewController.m */,
+				543121B516E9189C001B9A26 /* WinnersViewController.h */,
+				543121B616E9189C001B9A26 /* WinnersViewController.m */,
 				54F2001E16D2E4B3001121DA /* Supporting Files */,
 			);
 			path = Weatherby;
@@ -136,7 +144,6 @@
 		54F2001E16D2E4B3001121DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				541DD59216E68A4E0049C01F /* 001.wav */,
 				D945BE4316DF04EA005F6164 /* logo.png */,
 				54F2001F16D2E4B3001121DA /* Weatherby-Info.plist */,
 				54F2002016D2E4B3001121DA /* InfoPlist.strings */,
@@ -207,7 +214,6 @@
 				54F2003116D2E4B3001121DA /* MainStoryboard_iPhone.storyboard in Resources */,
 				54F2003416D2E4B3001121DA /* MainStoryboard_iPad.storyboard in Resources */,
 				D945BE4416DF04EA005F6164 /* logo.png in Resources */,
-				541DD59316E68A4E0049C01F /* 001.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +228,8 @@
 				54F2002816D2E4B3001121DA /* AppDelegate.m in Sources */,
 				54F2003716D2E4B3001121DA /* ViewController.m in Sources */,
 				54FECFA816E675F800E52E31 /* AudioPlayerViewController.m in Sources */,
+				543121B416E917B1001B9A26 /* AudioTourViewController.m in Sources */,
+				543121B716E9189C001B9A26 /* WinnersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

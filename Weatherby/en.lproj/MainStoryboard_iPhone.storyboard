@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="-1245" y="-553"/>
         </scene>
-        <!--View Controller - Audio Tour-->
+        <!--Audio Tour View Controller - Audio Tour-->
         <scene sceneID="V3E-Ff-JTx">
             <objects>
-                <viewController id="ArM-FE-SsA" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="ArM-FE-SsA" customClass="AudioTourViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6dH-94-fhI">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -139,8 +139,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="ArM-FE-SsA" id="KmL-9z-tIC"/>
-                                    <outlet property="delegate" destination="ArM-FE-SsA" id="NGt-qH-KgE"/>
+                                    <outlet property="dataSource" destination="ArM-FE-SsA" id="HAS-5B-bQR"/>
+                                    <outlet property="delegate" destination="ArM-FE-SsA" id="jai-Tq-wha"/>
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="t8c-qr-i1l">
@@ -193,6 +193,9 @@
                                             <rect key="frame" x="146" y="10" width="171" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </slider>
+                                        <connections>
+                                            <action selector="sliderVolumeAction:" destination="Ycg-HL-ZWG" id="TVr-vu-sEe"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
@@ -212,15 +215,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Audio Player" id="x7o-lT-5EB"/>
+                    <connections>
+                        <outlet property="songProgressView" destination="Xt6-jA-36k" id="eny-1F-NRY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkA-GY-whf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136" y="-786"/>
         </scene>
-        <!--View Controller - Award Winners-->
+        <!--Winners View Controller - Award Winners-->
         <scene sceneID="JKs-ZX-8b3">
             <objects>
-                <viewController id="ZPc-OK-IiC" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="ZPc-OK-IiC" customClass="WinnersViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yum-Md-U6E">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -241,6 +247,10 @@
                                         </view>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZPc-OK-IiC" id="MFJ-H7-XvN"/>
+                                    <outlet property="delegate" destination="ZPc-OK-IiC" id="0fj-Eq-RMA"/>
+                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nWz-fe-UtH">
                                 <textInputTraits key="textInputTraits"/>
@@ -302,22 +312,25 @@
             <relationships>
                 <relationship kind="action" name="pauseButton:"/>
                 <relationship kind="action" name="playButton:"/>
+                <relationship kind="action" name="playSound:"/>
                 <relationship kind="action" name="sliderVolumeAction:"/>
                 <relationship kind="action" name="stopButton:"/>
+                <relationship kind="action" name="volumeSlider:"/>
                 <relationship kind="outlet" name="songProgressView" candidateClass="UIProgressView"/>
                 <relationship kind="outlet" name="volumeSlider" candidateClass="UISlider"/>
             </relationships>
+        </class>
+        <class className="AudioTourViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioTourViewController.h"/>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="pauseButton:"/>
-                <relationship kind="action" name="playButton:"/>
-                <relationship kind="action" name="stopButton:"/>
-            </relationships>
+        </class>
+        <class className="WinnersViewController" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WinnersViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
