@@ -326,8 +326,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../Downloads/dropbox-ios-sdk-1.3.3\"",
-					"\"$(SRCROOT)/../../Downloads/dropbox-ios-sync-sdk-1.0.4\"",
+					"\"$(SRCROOT)/lib/dropbox-ios-sdk-1.3.3\"",
+					"\"$(SRCROOT)/lib/Downloads/dropbox-ios-sync-sdk-1.0.4\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weatherby/Weatherby-Prefix.pch";
@@ -342,8 +342,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../Downloads/dropbox-ios-sdk-1.3.3\"",
-					"\"$(SRCROOT)/../../Downloads/dropbox-ios-sync-sdk-1.0.4\"",
+					"\"$(SRCROOT)/lib/dropbox-ios-sdk-1.3.3\"",
+					"\"$(SRCROOT)/lib/Downloads/dropbox-ios-sync-sdk-1.0.4\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Weatherby/Weatherby-Prefix.pch";
