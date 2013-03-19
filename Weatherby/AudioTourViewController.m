@@ -11,6 +11,7 @@
 
 // Made array for datas
 @property (nonatomic, strong) NSMutableArray *tableData;
+@property (nonatomic, strong) NSMutableArray *tableName;
 
 @end
 
@@ -34,19 +35,22 @@
     // Do any additional setup after loading the view, typically from a nib.
     // Populated array data
     self.tableData = [NSMutableArray array];
-    NSArray *data = [content componentsSeparatedByString: @"\n"];
-    for (int i = 0; i < [data count]; i++) {
-        NSString *str = [data objectAtIndex:i];
-        [self.tableData addObject:str];
-    }
+    self.tableName = [NSMutableArray array];
+//    NSArray *data = [content componentsSeparatedByString: @"\n"];
+//    for (int i = 0; i < [data count]; i++) {
+//        NSString *str = [data objectAtIndex:i];
+//        [self.tableData addObject:str];
+//    }
     
     NSString* path = [[NSBundle mainBundle] pathForResource:@"001.wav"
                                                      ofType:nil];
-    NSLog(@"%@", path);
+
     NSArray *d = [[NSBundle mainBundle] pathsForResourcesOfType:@"wav" inDirectory:nil];
+    
     for(NSString *s in d)
     {
-        //NSLog(@"%@", s);
+        NSLog(@"%@", s);
+        [self.tableData addObject:s];
     }
     
 }
@@ -88,7 +92,7 @@
 // Cell Action Here
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Get row selected here
-    NSString *row = [[NSString alloc] initWithFormat:@"Aler, %ld", (long)indexPath.row];
+    NSInteger *row = indexPath.row;
     [self performSegueWithIdentifier:@"audioplayer" sender:self];
     // View row selected with alert
     //    UIAlertView *alert =
