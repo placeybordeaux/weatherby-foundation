@@ -11,6 +11,8 @@
 
 @interface AudioPlayerViewController : UIViewController
 
+@property (nonatomic, strong) NSString *audiofile;
+
 @property (weak, nonatomic) IBOutlet UISlider *volumeSlider;
 @property (weak, nonatomic) IBOutlet UIProgressView *songProgressView;
 - (IBAction)sliderVolumeAction:(id)sender;

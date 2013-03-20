@@ -33,12 +33,12 @@
     NSString* content = [NSString stringWithContentsOfFile:filePath
                                                   encoding:NSUTF8StringEncoding
                                                      error:NULL];
-    
+
     // Break down string and store it into the array
     self.tableData = [NSMutableArray array];
     NSArray *data = [content componentsSeparatedByString: @"\n"];
     for (int i = 0; i < [data count]; i++) {
-        NSString *str = [data objectAtIndex:i];
+        NSString *str = [data objectAtIndex:i];	
         [self.tableData addObject:str];
     }
     

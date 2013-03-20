@@ -19,6 +19,8 @@
 @end
 @implementation AudioPlayerViewController
 
+@synthesize audiofile;
+
 - (IBAction)playSound:(id)sender {
 }
 - (IBAction)volumeSlider:(id)sender {
@@ -53,9 +55,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSString *strPath=[[NSBundle mainBundle]pathForResource:@"001" ofType:@"wav"];
+    NSString *strPath=[[NSBundle mainBundle]pathForResource:audiofile ofType:@"wav"];
     NSURL *url=[NSURL fileURLWithPath:strPath];
-    
+    //NSLog(@"AudioFile Value: %@", audiofile);
     NSError *error;
     avPlayer =[[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
     [avPlayer setNumberOfLoops:1];

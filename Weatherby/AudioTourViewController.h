@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface AudioTourViewController : UIViewController
-
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 @end
