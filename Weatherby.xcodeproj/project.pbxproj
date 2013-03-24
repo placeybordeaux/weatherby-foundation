@@ -95,7 +95,6 @@
 		5434958116F8162E00BE0B98 /* 081.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 081.wav; path = ../Audio/081.wav; sourceTree = "<group>"; };
 		546A058216DFC9D3009E488F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		546A058416DFC9DA009E488F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		5478EBB916F919B30014A944 /* ConservationEffortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConservationEffortViewController.h; sourceTree = "<group>"; };
 		5478EBBA16F919B30014A944 /* ConservationEffortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConservationEffortViewController.m; sourceTree = "<group>"; };
 		54C1D63E16E6472A009C2C52 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		54F2001416D2E4B3001121DA /* Weatherby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherby.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +119,7 @@
 		54FECFA616E675F800E52E31 /* AudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerViewController.h; sourceTree = "<group>"; };
 		54FECFA716E675F800E52E31 /* AudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerViewController.m; sourceTree = "<group>"; };
 		D945BE4316DF04EA005F6164 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		D98BC4CC16FE89FA006739D1 /* ConservationEffortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConservationEffortViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +192,8 @@
 				543121B616E9189C001B9A26 /* WinnersViewController.m */,
 				5434956116F809BE00BE0B98 /* ConservationViewController.h */,
 				5434956216F809BE00BE0B98 /* ConservationViewController.m */,
-				5478EBB916F919B30014A944 /* ConservationEffortViewController.h */,
 				5478EBBA16F919B30014A944 /* ConservationEffortViewController.m */,
+				D98BC4CC16FE89FA006739D1 /* ConservationEffortViewController.h */,
 				54F2001E16D2E4B3001121DA /* Supporting Files */,
 			);
 			path = Weatherby;

@@ -9,6 +9,9 @@
 #import "WinnersViewController.h"
 
 @interface WinnersViewController ()
+{
+    NSArray *unfilteredWinners;
+}
 
 // Made array for datas
 @property (nonatomic, strong) NSMutableArray *tableData;
@@ -18,9 +21,22 @@
 
 @implementation WinnersViewController
 
+
+- (void)fillTable:(NSArray *) arr {
+    self.tableData = [NSMutableArray array];
+    for (int i = 0; i < [arr count]; i++) {
+        NSString *str = [arr objectAtIndex:i];
+        [self.tableData addObject:str];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.localSearchBar.delegate = self;
+    self.localTableView.delegate = self;
+    self.localTableView.dataSource = self;
+
     
     //[[DBAccountManager sharedManager] linkFromController:@"kDBRootDropbox"];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -35,13 +51,29 @@
                                                      error:NULL];
 
     // Break down string and store it into the array
-    self.tableData = [NSMutableArray array];
-    NSArray *data = [content componentsSeparatedByString: @"\n"];
-    for (int i = 0; i < [data count]; i++) {
-        NSString *str = [data objectAtIndex:i];	
-        [self.tableData addObject:str];
+    unfilteredWinners = [content componentsSeparatedByString: @"\n"];
+    [self fillTable:unfilteredWinners];
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    if(searchText.length == 0){
+        [self fillTable:unfilteredWinners];
+    } else {
+        NSMutableArray *filteredWinners = [[NSMutableArray alloc]init];
+        for (NSString *str in unfilteredWinners) {
+            NSRange r = [str rangeOfString:searchText options:NSCaseInsensitiveSearch];
+            if (r.location != NSNotFound){
+                [filteredWinners addObject:str];
+            }
+        }
+        [self fillTable:filteredWinners];
     }
-    
+    [self.localTableView reloadData];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [self.localSearchBar resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning

@@ -252,11 +252,8 @@
                                     <outlet property="delegate" destination="ZPc-OK-IiC" id="0fj-Eq-RMA"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nWz-fe-UtH">
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="nWz-fe-UtH">
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="GAX-Yd-kIu" id="gCF-3z-J5R"/>
-                                </connections>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -271,6 +268,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Award Winners" id="pcL-vI-F15"/>
+                    <connections>
+                        <outlet property="localSearchBar" destination="nWz-fe-UtH" id="FpT-Zi-U9k"/>
+                        <outlet property="localTableView" destination="GAX-Yd-kIu" id="LhW-Eb-wyD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKD-hg-8cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -380,6 +381,10 @@
         </class>
         <class className="ConservationEffortViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ConservationEffortViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="ConservationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ConservationViewController.h"/>
@@ -392,6 +397,10 @@
         </class>
         <class className="WinnersViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WinnersViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
