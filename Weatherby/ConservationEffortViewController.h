@@ -10,9 +10,4 @@
 
 @interface ConservationEffortViewController : UIViewController<UISearchBarDelegate,UITableViewDelegate, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UISearchBar *localSearchBar;
-@property (weak, nonatomic) IBOutlet UITableView *localTableView;
-
-- (void) fillTable:(NSArray*) arr;
-
 @end

@@ -112,7 +112,7 @@
 // Cell Action Here
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Get row selected here
-    NSString *row = [[NSString alloc] initWithFormat:@"Aler, %ld", (long)indexPath.row];
+    //NSString *row = [[NSString alloc] initWithFormat:@"Aler, %ld", (long)indexPath.row];
     // [self performSegueWithIdentifier:@"audioplayer" sender:self];
     
     
