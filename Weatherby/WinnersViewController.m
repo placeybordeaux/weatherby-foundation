@@ -22,20 +22,11 @@
 @implementation WinnersViewController
 
 
-- (void)fillTable:(NSArray *) arr {
-    self.tableData = [NSMutableArray array];
-    for (int i = 0; i < [arr count]; i++) {
-        NSString *str = [arr objectAtIndex:i];
-        [self.tableData addObject:str];
-    }
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.localSearchBar.delegate = self;
     self.localTableView.delegate = self;
-    self.localTableView.dataSource = self;
 
     
     //[[DBAccountManager sharedManager] linkFromController:@"kDBRootDropbox"];
@@ -53,6 +44,14 @@
     // Break down string and store it into the array
     unfilteredWinners = [content componentsSeparatedByString: @"\n"];
     [self fillTable:unfilteredWinners];
+}
+
+- (void)fillTable:(NSArray *) arr {
+    self.tableData = [NSMutableArray array];
+    for (int i = 0; i < [arr count]; i++) {
+        NSString *str = [arr objectAtIndex:i];
+        [self.tableData addObject:str];
+    }
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{

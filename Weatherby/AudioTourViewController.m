@@ -9,7 +9,9 @@
 #import "AudioTourViewController.h"
 #import "AudioPlayerViewController.h"
 
-@interface AudioTourViewController ()
+@interface AudioTourViewController (){
+    NSArray *unfilteredWavs;
+}
 
 // Made array for datas
 @property (nonatomic, strong) NSMutableArray *tableData;
@@ -19,11 +21,14 @@
 
 @implementation AudioTourViewController
 
-@synthesize tableView;
+@synthesize localTableView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.localSearchBar.delegate = self;
+    self.localTableView.delegate = self;
     
     // Do any additional setup after loading the view, typically from a nib.
     // Populated array data
@@ -41,7 +46,37 @@
         NSString *name = [components objectAtIndex:0];
         [self.tableData addObject:name];
     }
-    
+    //for the searching bar
+    unfilteredWavs = self.tableData.copy;
+}
+
+- (void)fillTable:(NSArray *) arr {
+    self.tableData = [NSMutableArray array];
+    for (int i = 0; i < [arr count]; i++) {
+        NSString *str = [arr objectAtIndex:i];
+        [self.tableData addObject:str];
+    }
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    if(searchText.length == 0){
+        [self fillTable:unfilteredWavs];
+    } else {
+        NSMutableArray *filteredWavs = [[NSMutableArray alloc]init];
+        for (NSString *str in unfilteredWavs) {
+            NSRange r = [str rangeOfString:searchText options:NSCaseInsensitiveSearch];
+            if (r.location != NSNotFound){
+                [filteredWavs addObject:str];
+            }
+        }
+        [self fillTable:filteredWavs];
+    }
+    [self.localTableView reloadData];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [self.localSearchBar resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,7 +123,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"audioplayer"]) {
-        int indexPath = [self.tableView indexPathForSelectedRow].row;
+        int indexPath = [self.localTableView indexPathForSelectedRow].row;
         AudioPlayerViewController *destViewController = segue.destinationViewController;
         destViewController.audiofile = [self.tableData objectAtIndex:indexPath];
     }

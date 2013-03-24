@@ -159,7 +159,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Audio Tour" id="ALv-nk-Aic"/>
                     <connections>
-                        <outlet property="tableView" destination="fQh-tI-fU1" id="Z2C-FA-Xre"/>
+                        <outlet property="localSearchBar" destination="t8c-qr-i1l" id="Zgf-fv-cim"/>
+                        <outlet property="localTableView" destination="fQh-tI-fU1" id="FKX-lP-jJB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GtG-lh-gUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -322,6 +323,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Conservation Efforts" id="g2d-uL-h7n"/>
+                    <connections>
+                        <outlet property="view" destination="IPH-eD-8PX" id="uST-2o-gFY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47r-Cj-Mlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -361,48 +365,6 @@
     <resources>
         <image name="logo.png" width="194" height="200"/>
     </resources>
-    <classes>
-        <class className="AudioPlayerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioPlayerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="pauseButton:"/>
-                <relationship kind="action" name="playButton:"/>
-                <relationship kind="action" name="sliderVolumeAction:"/>
-                <relationship kind="action" name="stopButton:"/>
-                <relationship kind="outlet" name="songProgressView" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="volumeSlider" candidateClass="UISlider"/>
-            </relationships>
-        </class>
-        <class className="AudioTourViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioTourViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ConservationEffortViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConservationEffortViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ConservationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConservationViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-        <class className="WinnersViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WinnersViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

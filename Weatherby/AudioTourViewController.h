@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AudioTourViewController : UIViewController
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@interface AudioTourViewController : UIViewController<UISearchBarDelegate,UITableViewDelegate, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UISearchBar *localSearchBar;
+@property (nonatomic, strong) IBOutlet UITableView *localTableView;
+
+- (void) fillTable:(NSArray*) arr;
+
 @end
