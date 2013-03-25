@@ -7,6 +7,7 @@
 //
 
 #import "WinnersViewController.h"
+#import "SingleWinnerViewController.h"
 
 @interface WinnersViewController ()
 {
@@ -113,8 +114,18 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Get row selected here
     //NSString *row = [[NSString alloc] initWithFormat:@"Aler, %ld", (long)indexPath.row];
-    // [self performSegueWithIdentifier:@"audioplayer" sender:self];
+    [self performSegueWithIdentifier:@"winnerview" sender:self];
     
     
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"winnerview"]) {
+        int indexPath = [self.localTableView indexPathForSelectedRow].row;
+        SingleWinnerViewController *destViewController = segue.destinationViewController;
+        destViewController.name = [self.tableData objectAtIndex:indexPath];
+    }
+}
+
 @end

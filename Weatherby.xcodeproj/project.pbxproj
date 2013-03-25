@@ -41,6 +41,7 @@
 		546A058516DFC9DA009E488F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546A058416DFC9DA009E488F /* QuartzCore.framework */; };
 		54C1D63F16E6472A009C2C52 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C1D63E16E6472A009C2C52 /* AVFoundation.framework */; };
 		54C2E6991700CF0000C0FA33 /* SingleEffortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C2E6981700CF0000C0FA33 /* SingleEffortViewController.m */; };
+		54C2E69C1700D60800C0FA33 /* SingleWinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C2E69B1700D60800C0FA33 /* SingleWinnerViewController.m */; };
 		54F2001816D2E4B3001121DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001716D2E4B3001121DA /* UIKit.framework */; };
 		54F2001A16D2E4B3001121DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001916D2E4B3001121DA /* Foundation.framework */; };
 		54F2001C16D2E4B3001121DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001B16D2E4B3001121DA /* CoreGraphics.framework */; };
@@ -98,6 +99,8 @@
 		54C1D63E16E6472A009C2C52 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		54C2E6971700CF0000C0FA33 /* SingleEffortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleEffortViewController.h; sourceTree = "<group>"; };
 		54C2E6981700CF0000C0FA33 /* SingleEffortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleEffortViewController.m; sourceTree = "<group>"; };
+		54C2E69A1700D60800C0FA33 /* SingleWinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleWinnerViewController.h; sourceTree = "<group>"; };
+		54C2E69B1700D60800C0FA33 /* SingleWinnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleWinnerViewController.m; sourceTree = "<group>"; };
 		54F2001416D2E4B3001121DA /* Weatherby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2001716D2E4B3001121DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54F2001916D2E4B3001121DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -194,6 +197,8 @@
 				5434956216F809BE00BE0B98 /* ConservationViewController.m */,
 				54C2E6971700CF0000C0FA33 /* SingleEffortViewController.h */,
 				54C2E6981700CF0000C0FA33 /* SingleEffortViewController.m */,
+				54C2E69A1700D60800C0FA33 /* SingleWinnerViewController.h */,
+				54C2E69B1700D60800C0FA33 /* SingleWinnerViewController.m */,
 				54F2001E16D2E4B3001121DA /* Supporting Files */,
 			);
 			path = Weatherby;
@@ -342,6 +347,7 @@
 				543121B716E9189C001B9A26 /* WinnersViewController.m in Sources */,
 				5434956316F809BE00BE0B98 /* ConservationViewController.m in Sources */,
 				54C2E6991700CF0000C0FA33 /* SingleEffortViewController.m in Sources */,
+				54C2E69C1700D60800C0FA33 /* SingleWinnerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

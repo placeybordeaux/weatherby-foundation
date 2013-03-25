@@ -238,14 +238,17 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GAX-Yd-kIu">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="awardCell" id="QWQ-gg-fQR">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="awardCell" id="QWQ-gg-fQR">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="4GJ-IU-StV" kind="push" identifier="winnerview" id="vbG-kT-qOc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -277,6 +280,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKD-hg-8cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-842" y="-1157"/>
+        </scene>
+        <!--Single Winner View Controller-->
+        <scene sceneID="uvX-oG-lPD">
+            <objects>
+                <viewController id="4GJ-IU-StV" customClass="SingleWinnerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="71Y-Ti-vEH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="biG-i6-UeC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dgs-jn-tey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="-1611"/>
         </scene>
         <!--Conservation View Controller - Conservation Efforts-->
         <scene sceneID="caN-hW-5Hl">
@@ -370,10 +388,8 @@
             <relationships>
                 <relationship kind="action" name="pauseButton:"/>
                 <relationship kind="action" name="playButton:"/>
-                <relationship kind="action" name="playSound:"/>
                 <relationship kind="action" name="sliderVolumeAction:"/>
                 <relationship kind="action" name="stopButton:"/>
-                <relationship kind="action" name="volumeSlider:"/>
                 <relationship kind="outlet" name="songProgressView" candidateClass="UIProgressView"/>
                 <relationship kind="outlet" name="volumeSlider" candidateClass="UISlider"/>
             </relationships>
@@ -393,6 +409,9 @@
         </class>
         <class className="SingleEffortViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleEffortViewController.h"/>
+        </class>
+        <class className="SingleWinnerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleWinnerViewController.h"/>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
