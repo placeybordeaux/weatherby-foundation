@@ -306,9 +306,6 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NdG-Jn-QYS">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="460" id="eKG-jx-iCj"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" id="Lew-On-ffG">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
@@ -335,7 +332,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zux-v2-6hG" firstAttribute="top" secondItem="Uqx-42-4gf" secondAttribute="top" type="default" id="9K1-5q-NL3"/>
-                            <constraint firstItem="NdG-Jn-QYS" firstAttribute="top" secondItem="Uqx-42-4gf" secondAttribute="top" constant="49" id="J2X-Ue-pF2"/>
+                            <constraint firstItem="NdG-Jn-QYS" firstAttribute="bottom" secondItem="Uqx-42-4gf" secondAttribute="bottom" type="default" id="CSp-PI-t0R"/>
+                            <constraint firstItem="NdG-Jn-QYS" firstAttribute="top" secondItem="zux-v2-6hG" secondAttribute="bottom" type="default" id="J30-Gu-fWe"/>
                             <constraint firstItem="NdG-Jn-QYS" firstAttribute="leading" secondItem="Uqx-42-4gf" secondAttribute="leading" type="default" id="LtR-qF-vLr"/>
                             <constraint firstItem="zux-v2-6hG" firstAttribute="trailing" secondItem="Uqx-42-4gf" secondAttribute="trailing" type="default" id="dm4-hh-XSp"/>
                             <constraint firstItem="zux-v2-6hG" firstAttribute="leading" secondItem="Uqx-42-4gf" secondAttribute="leading" type="default" id="nCT-gw-knk"/>
@@ -343,6 +341,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Conservation Efforts" id="UGa-KV-PZV"/>
+                    <connections>
+                        <outlet property="localTableView" destination="NdG-Jn-QYS" id="Bwu-cv-Ap1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8m-E2-2AG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -382,48 +383,6 @@
     <resources>
         <image name="logo.png" width="194" height="200"/>
     </resources>
-    <classes>
-        <class className="AudioPlayerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioPlayerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="pauseButton:"/>
-                <relationship kind="action" name="playButton:"/>
-                <relationship kind="action" name="sliderVolumeAction:"/>
-                <relationship kind="action" name="stopButton:"/>
-                <relationship kind="outlet" name="songProgressView" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="volumeSlider" candidateClass="UISlider"/>
-            </relationships>
-        </class>
-        <class className="AudioTourViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioTourViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ConservationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConservationViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SingleEffortViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleEffortViewController.h"/>
-        </class>
-        <class className="SingleWinnerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleWinnerViewController.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-        <class className="WinnersViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WinnersViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

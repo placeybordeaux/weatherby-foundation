@@ -10,10 +10,12 @@
 
 @implementation SingleEffortViewController
 
+@synthesize title_info;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.title = title_info;
 }
 
 - (void)didReceiveMemoryWarning

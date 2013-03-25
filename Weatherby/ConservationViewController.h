@@ -10,4 +10,6 @@
 
 @interface ConservationViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UITableView *localTableView;
+
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "ConservationViewController.h"
+#import "SingleEffortViewController.h"
+
 
 @interface ConservationViewController ()
 
@@ -18,9 +20,12 @@
 
 @implementation ConservationViewController
 
+@synthesize localTableView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //self.localTableView.delegate = self;
     
     //[[DBAccountManager sharedManager] linkFromController:@"kDBRootDropbox"];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -83,6 +88,14 @@
     // Get row selected here
     [self performSegueWithIdentifier:@"singleeffort" sender:self];
     
-    
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"singleeffort"]) {
+        int indexPath = [self.localTableView indexPathForSelectedRow].row;
+        SingleEffortViewController *destViewController = segue.destinationViewController;
+        destViewController.title_info = [self.tableData objectAtIndex:indexPath];
+    }
+}
+
 @end

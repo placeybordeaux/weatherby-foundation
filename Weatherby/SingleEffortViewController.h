@@ -10,4 +10,6 @@
 
 @interface SingleEffortViewController : UIViewController
 
+@property (nonatomic, strong) NSString *title_info;
+
 @end
