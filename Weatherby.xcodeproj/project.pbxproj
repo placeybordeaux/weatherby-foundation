@@ -39,8 +39,8 @@
 		5434959B16F8162E00BE0B98 /* 081.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5434958116F8162E00BE0B98 /* 081.wav */; };
 		546A058316DFC9D3009E488F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546A058216DFC9D3009E488F /* Security.framework */; };
 		546A058516DFC9DA009E488F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546A058416DFC9DA009E488F /* QuartzCore.framework */; };
-		5478EBBB16F919B30014A944 /* ConservationEffortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5478EBBA16F919B30014A944 /* ConservationEffortViewController.m */; };
 		54C1D63F16E6472A009C2C52 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C1D63E16E6472A009C2C52 /* AVFoundation.framework */; };
+		54C2E6991700CF0000C0FA33 /* SingleEffortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C2E6981700CF0000C0FA33 /* SingleEffortViewController.m */; };
 		54F2001816D2E4B3001121DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001716D2E4B3001121DA /* UIKit.framework */; };
 		54F2001A16D2E4B3001121DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001916D2E4B3001121DA /* Foundation.framework */; };
 		54F2001C16D2E4B3001121DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001B16D2E4B3001121DA /* CoreGraphics.framework */; };
@@ -95,8 +95,9 @@
 		5434958116F8162E00BE0B98 /* 081.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 081.wav; path = ../Audio/081.wav; sourceTree = "<group>"; };
 		546A058216DFC9D3009E488F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		546A058416DFC9DA009E488F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		5478EBBA16F919B30014A944 /* ConservationEffortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConservationEffortViewController.m; sourceTree = "<group>"; };
 		54C1D63E16E6472A009C2C52 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		54C2E6971700CF0000C0FA33 /* SingleEffortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleEffortViewController.h; sourceTree = "<group>"; };
+		54C2E6981700CF0000C0FA33 /* SingleEffortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleEffortViewController.m; sourceTree = "<group>"; };
 		54F2001416D2E4B3001121DA /* Weatherby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2001716D2E4B3001121DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54F2001916D2E4B3001121DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,7 +120,6 @@
 		54FECFA616E675F800E52E31 /* AudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerViewController.h; sourceTree = "<group>"; };
 		54FECFA716E675F800E52E31 /* AudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerViewController.m; sourceTree = "<group>"; };
 		D945BE4316DF04EA005F6164 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		D98BC4CC16FE89FA006739D1 /* ConservationEffortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConservationEffortViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +192,8 @@
 				543121B616E9189C001B9A26 /* WinnersViewController.m */,
 				5434956116F809BE00BE0B98 /* ConservationViewController.h */,
 				5434956216F809BE00BE0B98 /* ConservationViewController.m */,
-				5478EBBA16F919B30014A944 /* ConservationEffortViewController.m */,
-				D98BC4CC16FE89FA006739D1 /* ConservationEffortViewController.h */,
+				54C2E6971700CF0000C0FA33 /* SingleEffortViewController.h */,
+				54C2E6981700CF0000C0FA33 /* SingleEffortViewController.m */,
 				54F2001E16D2E4B3001121DA /* Supporting Files */,
 			);
 			path = Weatherby;
@@ -341,7 +341,7 @@
 				543121B416E917B1001B9A26 /* AudioTourViewController.m in Sources */,
 				543121B716E9189C001B9A26 /* WinnersViewController.m in Sources */,
 				5434956316F809BE00BE0B98 /* ConservationViewController.m in Sources */,
-				5478EBBB16F919B30014A944 /* ConservationEffortViewController.m in Sources */,
+				54C2E6991700CF0000C0FA33 /* SingleEffortViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

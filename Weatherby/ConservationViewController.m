@@ -81,7 +81,7 @@
 // Cell Action Here
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Get row selected here
-    [self performSegueWithIdentifier:@"conservationview" sender:self];
+    [self performSegueWithIdentifier:@"singleeffort" sender:self];
     
     
 }
