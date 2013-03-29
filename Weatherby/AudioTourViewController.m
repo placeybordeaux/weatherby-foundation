@@ -28,7 +28,7 @@
     [super viewDidLoad];
     
     self.localSearchBar.delegate = self;
-    self.localTableView.delegate = self;
+    self.localTableView.delegoate = self;
     
     // Do any additional setup after loading the view, typically from a nib.
     // Populated array data

@@ -10,6 +10,7 @@
 
 @interface ConservationViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UITableView *localTableView;
+@property (weak, nonatomic) IBOutlet UISearchBar *localSearchBar;
+@property (weak, nonatomic) IBOutlet UITableView *localTableView;
 
 @end

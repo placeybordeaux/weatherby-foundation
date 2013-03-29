@@ -345,7 +345,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Conservation Efforts" id="UGa-KV-PZV"/>
                     <connections>
-                        <outlet property="localTableView" destination="NdG-Jn-QYS" id="Bwu-cv-Ap1"/>
+                        <outlet property="localSearchBar" destination="zux-v2-6hG" id="sPD-s1-ljl"/>
+                        <outlet property="localTableView" destination="NdG-Jn-QYS" id="mgO-nW-Erw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8m-E2-2AG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -386,53 +387,6 @@
     <resources>
         <image name="logo.png" width="194" height="200"/>
     </resources>
-    <classes>
-        <class className="AudioPlayerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioPlayerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="pauseButton:"/>
-                <relationship kind="action" name="playButton:"/>
-                <relationship kind="action" name="playSound:"/>
-                <relationship kind="action" name="sliderVolumeAction:"/>
-                <relationship kind="action" name="stopButton:"/>
-                <relationship kind="action" name="volumeSlider:"/>
-                <relationship kind="outlet" name="songProgressView" candidateClass="UIProgressView"/>
-                <relationship kind="outlet" name="volumeSlider" candidateClass="UISlider"/>
-            </relationships>
-        </class>
-        <class className="AudioTourViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioTourViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ConservationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConservationViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SingleEffortViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleEffortViewController.h"/>
-        </class>
-        <class className="SingleWinnerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleWinnerViewController.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-        <class className="WinnersViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WinnersViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -10,7 +10,9 @@
 #import "SingleEffortViewController.h"
 
 
-@interface ConservationViewController ()
+@interface ConservationViewController (){
+    NSArray *unfilteredEfforts;
+}
 
 // Made array for datas
 @property (nonatomic, strong) NSMutableArray *tableData;
@@ -25,7 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //self.localTableView.delegate = self;
+    
+    
+    self.localSearchBar.delegate = self;
+    self.localTableView.delegate = self;
     
     //[[DBAccountManager sharedManager] linkFromController:@"kDBRootDropbox"];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -47,6 +52,37 @@
         [self.tableData addObject:str];
     }
     
+    unfilteredEfforts = self.tableData.copy;
+    
+}
+
+- (void)fillTable:(NSArray *) arr {
+    self.tableData = [NSMutableArray array];
+    for (int i = 0; i < [arr count]; i++) {
+        NSString *str = [arr objectAtIndex:i];
+        [self.tableData addObject:str];
+    }
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    if(searchText.length == 0){
+        [self fillTable:unfilteredEfforts];
+    } else {
+        NSMutableArray *filteredEfforts = [[NSMutableArray alloc]init];
+        for (NSString *str in unfilteredEfforts) {
+            NSRange r = [str rangeOfString:searchText options:NSCaseInsensitiveSearch];
+            if (r.location != NSNotFound){
+                [filteredEfforts addObject:str];
+            }
+        }
+        [self fillTable:filteredEfforts];
+    }
+    [self.localTableView reloadData];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [self.localSearchBar resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
