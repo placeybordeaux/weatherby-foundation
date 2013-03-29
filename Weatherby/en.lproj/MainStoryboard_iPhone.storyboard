@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZKq-Uh-IUx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZKq-Uh-IUx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -196,6 +196,9 @@
                                         <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="bfU-jh-l1v">
                                             <rect key="frame" x="146" y="10" width="171" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="sliderVolumeAction:" destination="Ycg-HL-ZWG" eventType="valueChanged" id="9UN-oe-ca3"/>
+                                            </connections>
                                         </slider>
                                         <connections>
                                             <action selector="sliderVolumeAction:" destination="Ycg-HL-ZWG" id="TVr-vu-sEe"/>
@@ -383,6 +386,53 @@
     <resources>
         <image name="logo.png" width="194" height="200"/>
     </resources>
+    <classes>
+        <class className="AudioPlayerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioPlayerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pauseButton:"/>
+                <relationship kind="action" name="playButton:"/>
+                <relationship kind="action" name="playSound:"/>
+                <relationship kind="action" name="sliderVolumeAction:"/>
+                <relationship kind="action" name="stopButton:"/>
+                <relationship kind="action" name="volumeSlider:"/>
+                <relationship kind="outlet" name="songProgressView" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="volumeSlider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="AudioTourViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioTourViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ConservationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConservationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SingleEffortViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleEffortViewController.h"/>
+        </class>
+        <class className="SingleWinnerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleWinnerViewController.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+        <class className="WinnersViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WinnersViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

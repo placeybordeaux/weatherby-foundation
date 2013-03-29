@@ -28,12 +28,11 @@
 - (IBAction)sliderVolumeAction:(id)sender {
     UISlider *volumeSlider=sender;
     [avPlayer setVolume:volumeSlider.value];
-    
 }
 
 - (IBAction)stopButton:(id)sender {
     [avPlayer stop];
-    [avPlayer setChannelAssignments:0];
+    [avPlayer setCurrentTime:0];
 }
 
 - (IBAction)pauseButton:(id)sender {
@@ -45,7 +44,7 @@
     
 }
 
--(void)updateMyPorgress{
+-(void)updateMyProgress{
     float progress =[avPlayer currentTime]/[avPlayer duration];
     self.songProgressView.progress=progress;
 }
@@ -57,12 +56,12 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSString *strPath=[[NSBundle mainBundle]pathForResource:audiofile ofType:@"wav"];
     NSURL *url=[NSURL fileURLWithPath:strPath];
-    //NSLog(@"AudioFile Value: %@", audiofile);
+    NSLog(@"AudioFile Value: %@", url);
     NSError *error;
     avPlayer =[[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-    [avPlayer setNumberOfLoops:1];
+    [avPlayer setNumberOfLoops:0];
     [avPlayer setVolume:self.volumeSlider.value];
-    [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updateMyPorgress) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updateMyProgress) userInfo:nil repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning

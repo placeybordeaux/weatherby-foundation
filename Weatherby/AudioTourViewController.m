@@ -116,7 +116,7 @@
 // Cell Action Here
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Get row selected here
-    //NSInteger *row = indexPath.row;
+    NSInteger *row = indexPath.row;
     [self performSegueWithIdentifier:@"audioplayer" sender:self];
     
 }
