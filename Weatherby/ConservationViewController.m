@@ -28,7 +28,6 @@
 {
     [super viewDidLoad];
     
-    
     self.localSearchBar.delegate = self;
     self.localTableView.delegate = self;
     
@@ -83,6 +82,24 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     [self.localSearchBar resignFirstResponder];
+}
+
+//The next two methods are for hiding the keyboard when people try and scroll the table.
+- (BOOL) searchBarShouldBeginEditing:(UISearchBar *)searchBar
+{
+    [self.localTableView setUserInteractionEnabled:NO];
+    return TRUE;
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    UITouch *touch = [[event allTouches] anyObject];
+    if ([self.localSearchBar isFirstResponder] && [touch view] != self.localSearchBar)
+    {
+        [self.localSearchBar resignFirstResponder];
+        [self.localTableView setUserInteractionEnabled:YES];
+
+    }
+    [super touchesBegan:touches withEvent:event];
 }
 
 - (void)didReceiveMemoryWarning
