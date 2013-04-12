@@ -36,8 +36,7 @@
     [ud writeToFile:fp atomically:YES];    
 
     //[[DBAccountManager sharedManager] linkFromController:@"kDBRootDropbox"];
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *filePath = [NSString stringWithFormat:@"%@/%@", [paths objectAtIndex:0],@"Winners.txt"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Winners" ofType:@"txt" inDirectory:nil];
     
     // Download and write to file
     NSURL *url = [NSURL URLWithString:@"https://dl.dropbox.com/s/itoeklwyqnvtk6y/Winners.txt?dl=1"];

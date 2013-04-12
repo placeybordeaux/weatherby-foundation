@@ -42,6 +42,7 @@
 		54C1D63F16E6472A009C2C52 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C1D63E16E6472A009C2C52 /* AVFoundation.framework */; };
 		54C2E6991700CF0000C0FA33 /* SingleEffortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C2E6981700CF0000C0FA33 /* SingleEffortViewController.m */; };
 		54C2E69C1700D60800C0FA33 /* SingleWinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C2E69B1700D60800C0FA33 /* SingleWinnerViewController.m */; };
+		54DAEA16171887B00073CEB7 /* Winners.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54DAEA15171887B00073CEB7 /* Winners.txt */; };
 		54F2001816D2E4B3001121DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001716D2E4B3001121DA /* UIKit.framework */; };
 		54F2001A16D2E4B3001121DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001916D2E4B3001121DA /* Foundation.framework */; };
 		54F2001C16D2E4B3001121DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F2001B16D2E4B3001121DA /* CoreGraphics.framework */; };
@@ -103,6 +104,7 @@
 		54C2E6981700CF0000C0FA33 /* SingleEffortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleEffortViewController.m; sourceTree = "<group>"; };
 		54C2E69A1700D60800C0FA33 /* SingleWinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleWinnerViewController.h; sourceTree = "<group>"; };
 		54C2E69B1700D60800C0FA33 /* SingleWinnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleWinnerViewController.m; sourceTree = "<group>"; };
+		54DAEA15171887B00073CEB7 /* Winners.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Winners.txt; sourceTree = "<group>"; };
 		54F2001416D2E4B3001121DA /* Weatherby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F2001716D2E4B3001121DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54F2001916D2E4B3001121DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				54F8374F1718625900B8AD84 /* WinnerBios.txt */,
+				54DAEA15171887B00073CEB7 /* Winners.txt */,
 				54F8374D1718577000B8AD84 /* 1956.jpg */,
 				5434956816F8162E00BE0B98 /* 001.wav */,
 				5434956916F8162E00BE0B98 /* 002.wav */,
@@ -337,6 +340,7 @@
 				5434959B16F8162E00BE0B98 /* 081.wav in Resources */,
 				54F8374E1718577000B8AD84 /* 1956.jpg in Resources */,
 				54F837501718625900B8AD84 /* WinnerBios.txt in Resources */,
+				54DAEA16171887B00073CEB7 /* Winners.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
