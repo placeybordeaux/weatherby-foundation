@@ -29,15 +29,9 @@
     //NSLog(@"%@", name);
     self.title = name;
     
-    //[[DBAccountManager sharedManager] linkFromController:@"kDBRootDropbox"];
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *filePath = [NSString stringWithFormat:@"%@/%@", [paths objectAtIndex:0],@"WinnerBios.txt"];
-    
-    // Download and write to file
-    NSURL *url = [NSURL URLWithString:@"https://www.dropbox.com/s/4xryuumf6xr3itq/WinnerBios.txt?dl=1"];
-    NSData *urlData = [NSData dataWithContentsOfURL:url];
-    [urlData writeToFile:filePath atomically:YES];
-    NSString* content = [NSString stringWithContentsOfFile:filePath
+    // Read content from local file
+    NSString *fp = [[NSBundle mainBundle] pathForResource:@"WinnerBios" ofType:@"txt" inDirectory:nil];
+    NSString* content = [NSString stringWithContentsOfFile:fp
                                                   encoding:NSUTF8StringEncoding
                                                      error:NULL];
     
@@ -52,11 +46,8 @@
             info = [ary objectAtIndex:1];
             // Get image
             NSString* imgPath = [[NSBundle mainBundle] pathForResource:[ary objectAtIndex:0] ofType:@"jpg" inDirectory:nil];
-            NSLog(@"\n\nthe string %@",filePath);
             UIImage *image = [[UIImage alloc] initWithContentsOfFile:imgPath];
-            
             [img setImage: image];
-            NSLog(@"%f,%f",image.size.width,image.size.height);
         }
         [self.bios addObject:str];
     }
