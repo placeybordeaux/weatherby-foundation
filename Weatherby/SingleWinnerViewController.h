@@ -11,5 +11,7 @@
 @interface SingleWinnerViewController : UIViewController
 
 @property (nonatomic, strong) NSString *name;
-
+@property (nonatomic, strong) NSString *info;
+@property (weak, nonatomic) IBOutlet UILabel *labelField;
+@property (strong, nonatomic) IBOutlet UIImageView *img;
 @end

@@ -54,6 +54,7 @@
 		54F2003116D2E4B3001121DA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F2002F16D2E4B3001121DA /* MainStoryboard_iPhone.storyboard */; };
 		54F2003416D2E4B3001121DA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F2003216D2E4B3001121DA /* MainStoryboard_iPad.storyboard */; };
 		54F2003716D2E4B3001121DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2003616D2E4B3001121DA /* ViewController.m */; };
+		54F8374E1718577000B8AD84 /* 1956.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54F8374D1718577000B8AD84 /* 1956.jpg */; };
 		54FBE0AD16E14624008C0B93 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBE0AC16E14624008C0B93 /* SystemConfiguration.framework */; };
 		54FBE0B116E14F26008C0B93 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBE0B016E14F26008C0B93 /* CFNetwork.framework */; };
 		54FECFA816E675F800E52E31 /* AudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FECFA716E675F800E52E31 /* AudioPlayerViewController.m */; };
@@ -118,6 +119,7 @@
 		54F2003316D2E4B3001121DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		54F2003516D2E4B3001121DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		54F2003616D2E4B3001121DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		54F8374D1718577000B8AD84 /* 1956.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1956.jpg; sourceTree = "<group>"; };
 		54FBE0AC16E14624008C0B93 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		54FBE0B016E14F26008C0B93 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		54FECFA616E675F800E52E31 /* AudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerViewController.h; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		54F2001E16D2E4B3001121DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54F8374D1718577000B8AD84 /* 1956.jpg */,
 				5434956816F8162E00BE0B98 /* 001.wav */,
 				5434956916F8162E00BE0B98 /* 002.wav */,
 				5434956A16F8162E00BE0B98 /* 003.wav */,
@@ -329,6 +332,7 @@
 				5434959916F8162E00BE0B98 /* 031.wav in Resources */,
 				5434959A16F8162E00BE0B98 /* 071.wav in Resources */,
 				5434959B16F8162E00BE0B98 /* 081.wav in Resources */,
+				54F8374E1718577000B8AD84 /* 1956.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
