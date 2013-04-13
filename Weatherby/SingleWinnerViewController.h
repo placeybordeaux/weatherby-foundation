@@ -12,7 +12,6 @@
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *info;
-@property (weak, nonatomic) IBOutlet UILabel *labelField;
-@property (weak, nonatomic) IBOutlet UILabel *born;
+@property (weak, nonatomic) IBOutlet UITextView *labelField;
 @property (strong, nonatomic) IBOutlet UIImageView *img;
 @end

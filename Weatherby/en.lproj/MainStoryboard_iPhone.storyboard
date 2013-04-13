@@ -298,52 +298,29 @@
                                     <constraint firstAttribute="height" constant="130" id="Fvk-FO-oqu"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJU-I8-qIc">
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bJn-4V-rHx">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="280" id="k7T-Br-j13"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dw-67-eIK">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="bJn-4V-rHx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="06o-Z0-w0B"/>
-                                    <constraint firstAttribute="bottom" secondItem="bJn-4V-rHx" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="0i8-T3-6Kf"/>
-                                    <constraint firstItem="bJn-4V-rHx" firstAttribute="leading" secondItem="cJU-I8-qIc" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="I1r-0R-NHI"/>
-                                    <constraint firstItem="bJn-4V-rHx" firstAttribute="top" secondItem="cJU-I8-qIc" secondAttribute="top" constant="15" id="Pc7-rk-kJB"/>
-                                    <constraint firstItem="bJn-4V-rHx" firstAttribute="centerX" secondItem="cJU-I8-qIc" secondAttribute="centerX" type="default" id="ywh-BM-fC2"/>
+                                    <constraint firstAttribute="height" constant="256" id="LRu-od-vsm"/>
                                 </constraints>
-                            </scrollView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTn-Vd-RAr">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="cdO-h1-eGP"/>
-                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cJU-I8-qIc" firstAttribute="bottom" secondItem="71Y-Ti-vEH" secondAttribute="bottom" type="default" id="0OK-F2-Jcu"/>
-                            <constraint firstItem="WTn-Vd-RAr" firstAttribute="trailing" secondItem="71Y-Ti-vEH" secondAttribute="trailing" type="default" id="7ss-hJ-krh"/>
-                            <constraint firstItem="WTn-Vd-RAr" firstAttribute="top" secondItem="71Y-Ti-vEH" secondAttribute="top" constant="145" id="FSW-hU-Fde"/>
-                            <constraint firstItem="fgO-7i-zUa" firstAttribute="centerX" secondItem="cJU-I8-qIc" secondAttribute="centerX" type="default" id="JtU-Os-P04"/>
-                            <constraint firstItem="cJU-I8-qIc" firstAttribute="top" secondItem="71Y-Ti-vEH" secondAttribute="top" constant="189" id="Naf-eZ-CyB"/>
-                            <constraint firstItem="WTn-Vd-RAr" firstAttribute="leading" secondItem="71Y-Ti-vEH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QJt-la-SL7"/>
-                            <constraint firstItem="fgO-7i-zUa" firstAttribute="top" secondItem="71Y-Ti-vEH" secondAttribute="top" constant="2" id="cWb-ht-jHv"/>
-                            <constraint firstItem="cJU-I8-qIc" firstAttribute="leading" secondItem="71Y-Ti-vEH" secondAttribute="leading" type="default" id="ePL-qk-ZGk"/>
-                            <constraint firstItem="cJU-I8-qIc" firstAttribute="trailing" secondItem="71Y-Ti-vEH" secondAttribute="trailing" type="default" id="va5-eS-WHX"/>
+                            <constraint firstItem="1Dw-67-eIK" firstAttribute="leading" secondItem="71Y-Ti-vEH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6RR-8d-f8J"/>
+                            <constraint firstItem="fgO-7i-zUa" firstAttribute="centerX" secondItem="1Dw-67-eIK" secondAttribute="centerX" type="default" id="Kbf-9X-pSB"/>
+                            <constraint firstAttribute="trailing" secondItem="1Dw-67-eIK" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="LlF-Tp-h8K"/>
+                            <constraint firstAttribute="bottom" secondItem="1Dw-67-eIK" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="clL-73-YGC"/>
+                            <constraint firstItem="fgO-7i-zUa" firstAttribute="top" secondItem="71Y-Ti-vEH" secondAttribute="top" constant="14" id="v6N-jf-Zoc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="biG-i6-UeC"/>
                     <connections>
-                        <outlet property="born" destination="WTn-Vd-RAr" id="Lzw-MI-uhS"/>
                         <outlet property="img" destination="fgO-7i-zUa" id="NDV-Pv-n20"/>
-                        <outlet property="labelField" destination="bJn-4V-rHx" id="cOU-WY-9sq"/>
+                        <outlet property="labelField" destination="1Dw-67-eIK" id="zet-aR-HgX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgs-jn-tey" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -438,6 +415,56 @@
     <resources>
         <image name="logo.png" width="194" height="200"/>
     </resources>
+    <classes>
+        <class className="AudioPlayerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioPlayerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pauseButton:"/>
+                <relationship kind="action" name="playButton:"/>
+                <relationship kind="action" name="sliderVolumeAction:"/>
+                <relationship kind="action" name="stopButton:"/>
+                <relationship kind="outlet" name="songProgressView" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="volumeSlider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="AudioTourViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioTourViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ConservationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConservationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SingleEffortViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleEffortViewController.h"/>
+        </class>
+        <class className="SingleWinnerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleWinnerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="img" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="labelField" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+        <class className="WinnersViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WinnersViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

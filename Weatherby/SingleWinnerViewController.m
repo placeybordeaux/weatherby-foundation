@@ -22,7 +22,6 @@
 @synthesize info;
 @synthesize labelField;
 @synthesize img;
-@synthesize born;
 
 - (void)viewDidLoad
 {
@@ -49,13 +48,13 @@
             NSString* imgPath = [[NSBundle mainBundle] pathForResource:[ary objectAtIndex:0] ofType:@"jpg" inDirectory:nil];
             UIImage *image = [[UIImage alloc] initWithContentsOfFile:imgPath];
             [img setImage: image];
-            [self.born setText: [data objectAtIndex:i+1]];
+            img.contentMode = UIViewContentModeScaleAspectFit;
+            info = [NSString stringWithFormat:@"%@\n\n%@", [data objectAtIndex: i + 1], info];
         }
         [self.bios addObject:str];
     }
     
-    [self.labelField setText: info];
-    self.labelField.numberOfLines = 0;
+    [self.labelField setText: info];	
     [self.labelField sizeToFit];
     
     
