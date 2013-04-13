@@ -320,7 +320,6 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTn-Vd-RAr">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="cdO-h1-eGP"/>
-                                    <constraint firstAttribute="width" constant="191" id="lEq-Dw-Zhd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -330,6 +329,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cJU-I8-qIc" firstAttribute="bottom" secondItem="71Y-Ti-vEH" secondAttribute="bottom" type="default" id="0OK-F2-Jcu"/>
+                            <constraint firstItem="WTn-Vd-RAr" firstAttribute="trailing" secondItem="71Y-Ti-vEH" secondAttribute="trailing" type="default" id="7ss-hJ-krh"/>
                             <constraint firstItem="fgO-7i-zUa" firstAttribute="centerX" secondItem="cJU-I8-qIc" secondAttribute="centerX" type="default" id="JtU-Os-P04"/>
                             <constraint firstItem="cJU-I8-qIc" firstAttribute="top" secondItem="71Y-Ti-vEH" secondAttribute="top" constant="189" id="Naf-eZ-CyB"/>
                             <constraint firstItem="WTn-Vd-RAr" firstAttribute="leading" secondItem="71Y-Ti-vEH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QJt-la-SL7"/>

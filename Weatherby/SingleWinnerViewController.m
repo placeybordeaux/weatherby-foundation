@@ -42,7 +42,7 @@
     NSArray *winnerdate = [name componentsSeparatedByString: @"-"];
     for (int i = 0; i < [data count]; i+=2) {
         NSString *str = [data objectAtIndex:i];
-        NSArray *ary = [str componentsSeparatedByString: @":"];
+        NSArray *ary = [str componentsSeparatedByString: @"::"];
         if ([[ary objectAtIndex:0] intValue] == [[winnerdate objectAtIndex:0] intValue]) {
             info = [ary objectAtIndex:1];
             // Get image
