@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZKq-Uh-IUx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZKq-Uh-IUx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -192,38 +192,31 @@
                                             <action selector="stopButton:" destination="Ycg-HL-ZWG" id="324-GF-3FM"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" id="zPd-a2-i4Q">
-                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="bfU-jh-l1v">
-                                            <rect key="frame" x="146" y="10" width="171" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <connections>
-                                                <action selector="sliderVolumeAction:" destination="Ycg-HL-ZWG" eventType="valueChanged" id="9UN-oe-ca3"/>
-                                            </connections>
-                                        </slider>
-                                        <connections>
-                                            <action selector="sliderVolumeAction:" destination="Ycg-HL-ZWG" id="TVr-vu-sEe"/>
-                                        </connections>
-                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xt6-jA-36k">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KF8-yL-hYB">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="291" id="8vH-Pm-B02"/>
+                                    <constraint firstAttribute="width" constant="285" id="H99-Ev-E2Y"/>
                                 </constraints>
-                            </progressView>
+                                <connections>
+                                    <action selector="moveEnd:" destination="Ycg-HL-ZWG" eventType="touchUpInside" id="SFF-zB-WuP"/>
+                                    <action selector="moveEnd:" destination="Ycg-HL-ZWG" eventType="touchUpOutside" id="yPW-7N-3ZZ"/>
+                                    <action selector="moveStart:" destination="Ycg-HL-ZWG" eventType="touchDown" id="c17-c3-gdk"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Xt6-jA-36k" secondAttribute="bottom" constant="64" id="HXl-rT-WWn"/>
-                            <constraint firstItem="Xt6-jA-36k" firstAttribute="centerX" secondItem="VRd-cF-5f5" secondAttribute="centerX" type="default" id="L8u-Nj-63c"/>
+                            <constraint firstAttribute="bottom" secondItem="KF8-yL-hYB" secondAttribute="bottom" constant="81" id="68s-hV-nbo"/>
+                            <constraint firstItem="JnX-Qb-o6z" firstAttribute="trailing" secondItem="VRd-cF-5f5" secondAttribute="trailing" type="default" id="Ial-0u-2KI"/>
                             <constraint firstItem="JnX-Qb-o6z" firstAttribute="leading" secondItem="VRd-cF-5f5" secondAttribute="leading" type="default" id="Ou3-yf-o34"/>
                             <constraint firstItem="JnX-Qb-o6z" firstAttribute="bottom" secondItem="VRd-cF-5f5" secondAttribute="bottom" type="default" id="SJl-sf-QD3"/>
-                            <constraint firstItem="Xt6-jA-36k" firstAttribute="centerX" secondItem="JnX-Qb-o6z" secondAttribute="centerX" type="default" id="fpe-1T-TNx"/>
+                            <constraint firstAttribute="trailing" secondItem="KF8-yL-hYB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="x5Z-PC-kXy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Audio Player" id="x7o-lT-5EB"/>
                     <connections>
-                        <outlet property="songProgressView" destination="Xt6-jA-36k" id="eny-1F-NRY"/>
+                        <outlet property="volumeSlider" destination="KF8-yL-hYB" id="XJo-hc-7YA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkA-GY-whf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -432,6 +425,62 @@
     <resources>
         <image name="logo.png" width="194" height="200"/>
     </resources>
+    <classes>
+        <class className="AudioPlayerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioPlayerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changeSongPosition:"/>
+                <relationship kind="action" name="moveEnd:"/>
+                <relationship kind="action" name="moveStart:"/>
+                <relationship kind="action" name="pauseButton:"/>
+                <relationship kind="action" name="playButton:"/>
+                <relationship kind="action" name="playSound:"/>
+                <relationship kind="action" name="stopButton:"/>
+                <relationship kind="outlet" name="songProgressView" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="volumeSlider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="AudioTourViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioTourViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ConservationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConservationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SingleEffortViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleEffortViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="labelField" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="SingleWinnerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleWinnerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="img" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="labelField" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+        <class className="WinnersViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WinnersViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="localSearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

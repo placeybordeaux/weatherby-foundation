@@ -15,9 +15,10 @@
 
 @property (weak, nonatomic) IBOutlet UISlider *volumeSlider;
 @property (weak, nonatomic) IBOutlet UIProgressView *songProgressView;
-- (IBAction)sliderVolumeAction:(id)sender;
 - (IBAction)stopButton:(id)sender;
 - (IBAction)pauseButton:(id)sender;
 - (IBAction)playButton:(id)sender;
+- (IBAction)moveStart:(id)sender;
+- (IBAction)moveEnd:(id)sender;
 
 @end

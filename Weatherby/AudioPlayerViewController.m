@@ -15,6 +15,7 @@
 
 // Made array for datas
 @property (nonatomic, strong) NSArray *tableData;
+@property BOOL editing;
 
 @end
 @implementation AudioPlayerViewController
@@ -22,12 +23,6 @@
 @synthesize audiofile;
 
 - (IBAction)playSound:(id)sender {
-}
-- (IBAction)volumeSlider:(id)sender {
-}
-- (IBAction)sliderVolumeAction:(id)sender {
-    UISlider *volumeSlider=sender;
-    [avPlayer setVolume:volumeSlider.value];
 }
 
 - (IBAction)stopButton:(id)sender {
@@ -44,11 +39,34 @@
     
 }
 
--(void)updateMyProgress{
-    float progress =[avPlayer currentTime]/[avPlayer duration];
-    self.songProgressView.progress=progress;
+- (IBAction)changeSongPosition:(id)sender {
+    UISlider *volumeSlider=sender;
+    [avPlayer setCurrentTime:volumeSlider.value * avPlayer.duration];
 }
 
+- (IBAction)moveStart:(id)sender {
+    _editing = true;
+}
+
+- (IBAction)moveEnd:(id)sender {
+    UISlider *volumeSlider=sender;
+    [avPlayer setCurrentTime:volumeSlider.value * avPlayer.duration];
+    _editing = false;
+    NSLog(@"asdf");
+}
+
+-(void)updateMyProgress{
+    if (!_editing){
+    float progress =[avPlayer currentTime]/[avPlayer duration];
+    self.songProgressView.progress=progress;
+    self.volumeSlider.value = progress;
+    }
+}
+
+- (void)didMoveToParentViewController:(UIViewController *)parent
+{
+    [avPlayer stop];
+}
 
 - (void)viewDidLoad
 {
@@ -56,12 +74,12 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSString *strPath=[[NSBundle mainBundle]pathForResource:audiofile ofType:@"wav"];
     NSURL *url=[NSURL fileURLWithPath:strPath];
-    NSLog(@"AudioFile Value: %@", url);
     NSError *error;
     avPlayer =[[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
     [avPlayer setNumberOfLoops:0];
-    [avPlayer setVolume:self.volumeSlider.value];
+    [avPlayer setVolume:0.5];
     [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updateMyProgress) userInfo:nil repeats:YES];
+    _editing = false;
 }
 
 - (void)didReceiveMemoryWarning
