@@ -94,6 +94,8 @@
 		54BF86B8171A0D9300155ABC /* 2010.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54BF8682171A0D9300155ABC /* 2010.jpg */; };
 		54BF86B9171A0D9300155ABC /* 2011.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54BF8683171A0D9300155ABC /* 2011.jpg */; };
 		54BF86BA171A0D9300155ABC /* 2012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54BF8684171A0D9300155ABC /* 2012.jpg */; };
+		54BF86BD171A28DF00155ABC /* ConservationEfforts.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54BF86BB171A28DF00155ABC /* ConservationEfforts.txt */; };
+		54BF86BE171A28DF00155ABC /* Efforts.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54BF86BC171A28DF00155ABC /* Efforts.txt */; };
 		54C1D63F16E6472A009C2C52 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C1D63E16E6472A009C2C52 /* AVFoundation.framework */; };
 		54C2E6991700CF0000C0FA33 /* SingleEffortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C2E6981700CF0000C0FA33 /* SingleEffortViewController.m */; };
 		54C2E69C1700D60800C0FA33 /* SingleWinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C2E69B1700D60800C0FA33 /* SingleWinnerViewController.m */; };
@@ -207,6 +209,8 @@
 		54BF8682171A0D9300155ABC /* 2010.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2010.jpg; sourceTree = "<group>"; };
 		54BF8683171A0D9300155ABC /* 2011.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2011.jpg; sourceTree = "<group>"; };
 		54BF8684171A0D9300155ABC /* 2012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2012.jpg; sourceTree = "<group>"; };
+		54BF86BB171A28DF00155ABC /* ConservationEfforts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ConservationEfforts.txt; sourceTree = "<group>"; };
+		54BF86BC171A28DF00155ABC /* Efforts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Efforts.txt; sourceTree = "<group>"; };
 		54C1D63E16E6472A009C2C52 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		54C2E6971700CF0000C0FA33 /* SingleEffortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleEffortViewController.h; sourceTree = "<group>"; };
 		54C2E6981700CF0000C0FA33 /* SingleEffortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleEffortViewController.m; sourceTree = "<group>"; };
@@ -380,6 +384,8 @@
 		54F2001E16D2E4B3001121DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54BF86BB171A28DF00155ABC /* ConservationEfforts.txt */,
+				54BF86BC171A28DF00155ABC /* Efforts.txt */,
 				54BF864E171A0D9300155ABC /* Photos */,
 				54BF8649171A042C00155ABC /* WinnerBios.txt */,
 				54DAEA15171887B00073CEB7 /* Winners.txt */,
@@ -561,6 +567,8 @@
 				54BF86B8171A0D9300155ABC /* 2010.jpg in Resources */,
 				54BF86B9171A0D9300155ABC /* 2011.jpg in Resources */,
 				54BF86BA171A0D9300155ABC /* 2012.jpg in Resources */,
+				54BF86BD171A28DF00155ABC /* ConservationEfforts.txt in Resources */,
+				54BF86BE171A28DF00155ABC /* Efforts.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

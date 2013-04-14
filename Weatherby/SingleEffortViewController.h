@@ -11,5 +11,6 @@
 @interface SingleEffortViewController : UIViewController
 
 @property (nonatomic, strong) NSString *title_info;
+@property (weak, nonatomic) IBOutlet UITextView *labelField;
 
 @end

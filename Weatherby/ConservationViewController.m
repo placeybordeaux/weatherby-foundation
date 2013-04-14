@@ -31,9 +31,14 @@
     self.localSearchBar.delegate = self;
     self.localTableView.delegate = self;
     
+    // Download and write to file
+    NSString *fp = [[NSBundle mainBundle] pathForResource:@"Efforts" ofType:@"txt" inDirectory:nil];
+    NSURL *u = [NSURL URLWithString:@"https://www.dropbox.com/s/k96vax1cgb9pqo2/Efforts.txt?dl=1"];
+    NSData *ud = [NSData dataWithContentsOfURL:u];
+    [ud writeToFile:fp atomically:YES];
+   
     //[[DBAccountManager sharedManager] linkFromController:@"kDBRootDropbox"];
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *filePath = [NSString stringWithFormat:@"%@/%@", [paths objectAtIndex:0],@"ConservationEfforts.txt"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ConservationEfforts" ofType:@"txt" inDirectory:nil];
     
     // Download and write to file
     NSURL *url = [NSURL URLWithString:@"https://www.dropbox.com/s/mevknt61g75osdw/ConservationEfforts.txt?dl=1"];
