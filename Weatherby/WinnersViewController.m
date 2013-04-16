@@ -75,6 +75,29 @@
         NSURL *url = [NSURL URLWithString:@"https://dl.dropbox.com/s/itoeklwyqnvtk6y/Winners.txt?dl=1"];
         NSData *urlData = [NSData dataWithContentsOfURL:url];
         [urlData writeToFile:filePath atomically:YES];
+        
+        // Download new pictures file 
+        NSURL *picUrl = [NSURL URLWithString:@"https://www.dropbox.com/s/7w6sogjp2j4qvhv/Pictures.txt?dl=1"];
+        NSData *picData = [NSData dataWithContentsOfURL:picUrl];
+        NSString *picPath = [[NSBundle mainBundle] pathForResource:@"Pictures" ofType:@"txt" inDirectory:nil];
+        [picData writeToFile:picPath atomically:YES];
+        NSString* picContent = [NSString stringWithContentsOfFile:picPath
+                                                      encoding:NSUTF8StringEncoding
+                                                         error:NULL];
+        NSArray *broken = [picContent  componentsSeparatedByString: @"\n"];
+        for (int j = 0; j < [broken count]; j+=2) {
+            
+            NSString *tempPath = [[NSBundle mainBundle] pathForResource:[broken objectAtIndex:j+1] ofType:@"jpg" inDirectory:nil];
+            if (tempPath == NULL) {
+                NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+                NSString *combined = [NSString stringWithFormat:@"%@.jpg", [broken objectAtIndex:j+1]];
+                tempPath = [NSString stringWithFormat:@"%@/%@", [paths objectAtIndex:0], combined];
+                combined = [NSString stringWithFormat:@"%@?dl=1", [broken objectAtIndex:j]];
+                NSURL *tempUrl = [NSURL URLWithString: combined];
+                NSData *tempData = [NSData dataWithContentsOfURL:tempUrl];
+                [tempData writeToFile:tempPath atomically:YES];
+            }
+        }
     }
     
     

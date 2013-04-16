@@ -46,6 +46,13 @@
             info = [ary objectAtIndex:1];
             // Get image
             NSString* imgPath = [[NSBundle mainBundle] pathForResource:[ary objectAtIndex:0] ofType:@"jpg" inDirectory:nil];
+            if (imgPath == NULL) {
+                NSString *combined = [NSString stringWithFormat:@"%@.jpg", [ary objectAtIndex:0]];
+                NSArray *tmpPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+                NSString *directory = [tmpPath objectAtIndex:0];
+                imgPath = [directory stringByAppendingPathComponent:combined];
+            }
+            NSLog(@"%@", imgPath);
             UIImage *image = [[UIImage alloc] initWithContentsOfFile:imgPath];
             [img setImage: image];
             img.contentMode = UIViewContentModeScaleAspectFit;

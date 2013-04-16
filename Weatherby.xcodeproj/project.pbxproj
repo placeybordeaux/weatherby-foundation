@@ -10,6 +10,7 @@
 		4B46D6A7171C9AFB0079F6C8 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B46D6A6171C9AFB0079F6C8 /* HistoryViewController.m */; };
 		4B46D6AE171CBDCD0079F6C8 /* history.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B46D6AD171CBDCD0079F6C8 /* history.txt */; };
 		4B46D6B0171CC4940079F6C8 /* Group_1.tif in Resources */ = {isa = PBXBuildFile; fileRef = 4B46D6AF171CC4940079F6C8 /* Group_1.tif */; };
+		5423CA07171DFDC000088CF7 /* Pictures.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5423CA06171DFDC000088CF7 /* Pictures.txt */; };
 		5423E44C16D6AB21001E6EA6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5423E44B16D6AB21001E6EA6 /* AudioToolbox.framework */; };
 		543121B416E917B1001B9A26 /* AudioTourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 543121B316E917B1001B9A26 /* AudioTourViewController.m */; };
 		543121B716E9189C001B9A26 /* WinnersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 543121B616E9189C001B9A26 /* WinnersViewController.m */; };
@@ -128,6 +129,7 @@
 		4B46D6A6171C9AFB0079F6C8 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		4B46D6AD171CBDCD0079F6C8 /* history.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = history.txt; sourceTree = "<group>"; };
 		4B46D6AF171CC4940079F6C8 /* Group_1.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Group_1.tif; sourceTree = "<group>"; };
+		5423CA06171DFDC000088CF7 /* Pictures.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pictures.txt; sourceTree = "<group>"; };
 		5423E44B16D6AB21001E6EA6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		543121B216E917B1001B9A26 /* AudioTourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioTourViewController.h; sourceTree = "<group>"; };
 		543121B316E917B1001B9A26 /* AudioTourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTourViewController.m; sourceTree = "<group>"; };
@@ -372,9 +374,9 @@
 				54F2002616D2E4B3001121DA /* AppDelegate.h */,
 				54F2002716D2E4B3001121DA /* AppDelegate.m */,
 				54F2002F16D2E4B3001121DA /* MainStoryboard_iPhone.storyboard */,
+				54F2003216D2E4B3001121DA /* MainStoryboard_iPad.storyboard */,
 				4B46D6A5171C9AFB0079F6C8 /* HistoryViewController.h */,
 				4B46D6A6171C9AFB0079F6C8 /* HistoryViewController.m */,
-				54F2003216D2E4B3001121DA /* MainStoryboard_iPad.storyboard */,
 				54F2003516D2E4B3001121DA /* ViewController.h */,
 				54F2003616D2E4B3001121DA /* ViewController.m */,
 				54FECFA616E675F800E52E31 /* AudioPlayerViewController.h */,
@@ -397,6 +399,7 @@
 		54F2001E16D2E4B3001121DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5423CA06171DFDC000088CF7 /* Pictures.txt */,
 				5432D9C3171DE958003EAA3A /* UpdateCon.txt */,
 				5432D9C1171DE748003EAA3A /* UpdateWin.txt */,
 				4B46D6AF171CC4940079F6C8 /* Group_1.tif */,
@@ -590,6 +593,7 @@
 				4B46D6B0171CC4940079F6C8 /* Group_1.tif in Resources */,
 				5432D9C2171DE748003EAA3A /* UpdateWin.txt in Resources */,
 				5432D9C4171DE958003EAA3A /* UpdateCon.txt in Resources */,
+				5423CA07171DFDC000088CF7 /* Pictures.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
