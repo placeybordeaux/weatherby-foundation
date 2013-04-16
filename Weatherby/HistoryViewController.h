@@ -10,4 +10,8 @@
 
 @interface HistoryViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *labelField;
+@property (weak, nonatomic) IBOutlet UITextView *labelField2;
+@property (nonatomic, strong) NSString *title_info;
+@property (strong, nonatomic) IBOutlet UIImageView *img;
 @end
