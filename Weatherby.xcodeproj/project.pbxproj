@@ -13,6 +13,8 @@
 		5423E44C16D6AB21001E6EA6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5423E44B16D6AB21001E6EA6 /* AudioToolbox.framework */; };
 		543121B416E917B1001B9A26 /* AudioTourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 543121B316E917B1001B9A26 /* AudioTourViewController.m */; };
 		543121B716E9189C001B9A26 /* WinnersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 543121B616E9189C001B9A26 /* WinnersViewController.m */; };
+		5432D9C2171DE748003EAA3A /* UpdateWin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5432D9C1171DE748003EAA3A /* UpdateWin.txt */; };
+		5432D9C4171DE958003EAA3A /* UpdateCon.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5432D9C3171DE958003EAA3A /* UpdateCon.txt */; };
 		5434956316F809BE00BE0B98 /* ConservationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434956216F809BE00BE0B98 /* ConservationViewController.m */; };
 		5434958216F8162E00BE0B98 /* 001.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5434956816F8162E00BE0B98 /* 001.wav */; };
 		5434958316F8162E00BE0B98 /* 002.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5434956916F8162E00BE0B98 /* 002.wav */; };
@@ -131,6 +133,8 @@
 		543121B316E917B1001B9A26 /* AudioTourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioTourViewController.m; sourceTree = "<group>"; };
 		543121B516E9189C001B9A26 /* WinnersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinnersViewController.h; sourceTree = "<group>"; };
 		543121B616E9189C001B9A26 /* WinnersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinnersViewController.m; sourceTree = "<group>"; };
+		5432D9C1171DE748003EAA3A /* UpdateWin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UpdateWin.txt; sourceTree = "<group>"; };
+		5432D9C3171DE958003EAA3A /* UpdateCon.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UpdateCon.txt; sourceTree = "<group>"; };
 		5434956116F809BE00BE0B98 /* ConservationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConservationViewController.h; sourceTree = "<group>"; };
 		5434956216F809BE00BE0B98 /* ConservationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConservationViewController.m; sourceTree = "<group>"; };
 		5434956816F8162E00BE0B98 /* 001.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 001.wav; path = ../Audio/001.wav; sourceTree = "<group>"; };
@@ -393,6 +397,8 @@
 		54F2001E16D2E4B3001121DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5432D9C3171DE958003EAA3A /* UpdateCon.txt */,
+				5432D9C1171DE748003EAA3A /* UpdateWin.txt */,
 				4B46D6AF171CC4940079F6C8 /* Group_1.tif */,
 				4B46D6AD171CBDCD0079F6C8 /* history.txt */,
 				54BF86BB171A28DF00155ABC /* ConservationEfforts.txt */,
@@ -582,6 +588,8 @@
 				54BF86BE171A28DF00155ABC /* Efforts.txt in Resources */,
 				4B46D6AE171CBDCD0079F6C8 /* history.txt in Resources */,
 				4B46D6B0171CC4940079F6C8 /* Group_1.tif in Resources */,
+				5432D9C2171DE748003EAA3A /* UpdateWin.txt in Resources */,
+				5432D9C4171DE958003EAA3A /* UpdateCon.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
