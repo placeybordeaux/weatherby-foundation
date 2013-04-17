@@ -44,7 +44,7 @@
                                                           error:NULL];
     
     // Get update timestamp from DROPBOX
-    NSURL *updateURL = [NSURL URLWithString:@"https://www.dropbox.com/s/iqrinhe92alj12r/UpdateCon.txt?dl=1"];
+    NSURL *updateURL = [NSURL URLWithString:@"https://www.dropbox.com/s/78svwst7acx27z6/UpdateCon.txt?dl=1"];
     NSData *updateData = [NSData dataWithContentsOfURL:updateURL];
     [updateData writeToFile:path atomically:YES];
     NSString* downloadedContent = [NSString stringWithContentsOfFile:path
@@ -70,12 +70,12 @@
     
  
     if (con) {
-        NSURL *u = [NSURL URLWithString:@"https://www.dropbox.com/s/k96vax1cgb9pqo2/Efforts.txt?dl=1"];
+        NSURL *u = [NSURL URLWithString:@"https://www.dropbox.com/s/y951o88ooqge39g/Efforts.txt?dl=1"];
         NSData *ud = [NSData dataWithContentsOfURL:u];
         [ud writeToFile:fp atomically:YES];
     
         // Download and write to file
-        NSURL *url = [NSURL URLWithString:@"https://www.dropbox.com/s/mevknt61g75osdw/ConservationEfforts.txt?dl=1"];
+        NSURL *url = [NSURL URLWithString:@"https://www.dropbox.com/s/y8il1y5kyumjkd4/ConservationEfforts.txt?dl=1"];
         NSData *urlData = [NSData dataWithContentsOfURL:url];
         [urlData writeToFile:filePath atomically:YES];
     }
