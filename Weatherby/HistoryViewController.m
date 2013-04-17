@@ -13,10 +13,12 @@
 @synthesize title_info;
 @synthesize labelField;
 @synthesize labelField2;
+@synthesize sv;
 @synthesize img;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [sv setContentSize:CGSizeMake(320, 1000)];
     self.title = title_info;
     
     // Read content from local file

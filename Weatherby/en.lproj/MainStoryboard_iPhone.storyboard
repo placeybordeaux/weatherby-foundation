@@ -414,61 +414,35 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivp-iK-GOE">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES"/>
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pB7-QN-WsP">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2v-pR-gHc">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="327" id="7eM-v2-mTR"/>
+                                            <constraint firstAttribute="height" constant="504" id="aPy-99-DD2"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="825-7N-PkI"/>
+                                    <constraint firstItem="L2v-pR-gHc" firstAttribute="top" secondItem="pB7-QN-WsP" secondAttribute="top" constant="77" id="8nW-1c-N0f"/>
+                                    <constraint firstAttribute="bottom" secondItem="L2v-pR-gHc" secondAttribute="bottom" constant="-77" id="RJn-G5-JIZ"/>
+                                    <constraint firstItem="L2v-pR-gHc" firstAttribute="leading" secondItem="pB7-QN-WsP" secondAttribute="leading" constant="10" id="gce-Gf-Jij"/>
+                                    <constraint firstAttribute="trailing" secondItem="L2v-pR-gHc" secondAttribute="trailing" constant="-10" id="sJR-H7-ZwV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njt-0e-v1K">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="MPd-1T-iJo"/>
-                                    <constraint firstAttribute="height" constant="221" id="pAi-Pn-exU"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUj-hQ-V5W">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="IW7-1A-GUj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZI-JU-QeX">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="169" id="aKZ-fq-Cyg"/>
-                                    <constraint firstAttribute="width" constant="314" id="nJx-GL-P0g"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rUj-hQ-V5W" firstAttribute="top" secondItem="Njt-0e-v1K" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="HiP-8n-Ft5"/>
-                            <constraint firstItem="Njt-0e-v1K" firstAttribute="centerX" secondItem="8mD-ka-RbX" secondAttribute="centerX" type="default" id="PkJ-t6-rEe"/>
-                            <constraint firstItem="Njt-0e-v1K" firstAttribute="top" secondItem="8mD-ka-RbX" secondAttribute="top" constant="114" id="SbJ-va-bd3"/>
-                            <constraint firstItem="Njt-0e-v1K" firstAttribute="trailing" secondItem="ivp-iK-GOE" secondAttribute="trailing" type="default" id="T05-oQ-JsB"/>
-                            <constraint firstItem="6ZI-JU-QeX" firstAttribute="leading" secondItem="8mD-ka-RbX" secondAttribute="leading" type="default" id="W9M-4Z-w9s"/>
-                            <constraint firstItem="6ZI-JU-QeX" firstAttribute="bottom" secondItem="8mD-ka-RbX" secondAttribute="bottom" type="default" id="d4E-eo-Fug"/>
-                            <constraint firstItem="rUj-hQ-V5W" firstAttribute="leading" secondItem="Njt-0e-v1K" secondAttribute="leading" type="default" id="hgz-PQ-dFj"/>
-                            <constraint firstItem="6ZI-JU-QeX" firstAttribute="centerX" secondItem="ivp-iK-GOE" secondAttribute="centerX" type="default" id="sKS-Rx-pVh"/>
-                            <constraint firstItem="rUj-hQ-V5W" firstAttribute="trailing" secondItem="8mD-ka-RbX" secondAttribute="trailing" type="default" id="um0-BD-33n"/>
-                            <constraint firstItem="ivp-iK-GOE" firstAttribute="top" secondItem="8mD-ka-RbX" secondAttribute="top" type="default" id="vcH-j3-IIy"/>
+                            <constraint firstItem="pB7-QN-WsP" firstAttribute="top" secondItem="8mD-ka-RbX" secondAttribute="top" type="default" id="9AF-bx-VmN"/>
+                            <constraint firstItem="pB7-QN-WsP" firstAttribute="leading" secondItem="8mD-ka-RbX" secondAttribute="leading" constant="-7" id="OGK-GT-Fsn"/>
+                            <constraint firstItem="pB7-QN-WsP" firstAttribute="trailing" secondItem="8mD-ka-RbX" secondAttribute="trailing" type="default" id="ZRP-bI-zE7"/>
+                            <constraint firstItem="pB7-QN-WsP" firstAttribute="bottom" secondItem="8mD-ka-RbX" secondAttribute="bottom" type="default" id="a7G-fh-yuT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="79P-xO-FYf"/>
                     <connections>
-                        <outlet property="img" destination="Njt-0e-v1K" id="tL5-8y-Y3l"/>
-                        <outlet property="labelField" destination="ivp-iK-GOE" id="GUf-IG-RTB"/>
-                        <outlet property="labelField2" destination="6ZI-JU-QeX" id="lUC-N7-YyU"/>
+                        <outlet property="img" destination="L2v-pR-gHc" id="qdI-TD-PPC"/>
+                        <outlet property="sv" destination="pB7-QN-WsP" id="iHm-Tv-smq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNK-vy-Cw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -519,6 +493,7 @@
                 <relationship kind="outlet" name="img" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="labelField" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="labelField2" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="sv" candidateClass="UIScrollView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *labelField;
 @property (weak, nonatomic) IBOutlet UITextView *labelField2;
+@property (weak, nonatomic) IBOutlet UIScrollView *sv;
 @property (nonatomic, strong) NSString *title_info;
 @property (strong, nonatomic) IBOutlet UIImageView *img;
 @end
