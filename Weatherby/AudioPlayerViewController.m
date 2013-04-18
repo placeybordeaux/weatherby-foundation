@@ -72,7 +72,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSString *strPath=[[NSBundle mainBundle]pathForResource:audiofile ofType:@"wav"];
+    NSString *strPath=[[NSBundle mainBundle]pathForResource:audiofile ofType:@"wav"
+                                                inDirectory:@"AudioTour"];
     NSURL *url=[NSURL fileURLWithPath:strPath];
     NSError *error;
     avPlayer =[[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
