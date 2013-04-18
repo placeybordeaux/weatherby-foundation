@@ -35,7 +35,7 @@
     self.tableData = [NSMutableArray array];
     self.tableName = [NSMutableArray array];
     
-    NSArray *d = [[NSBundle mainBundle] pathsForResourcesOfType:@"wav" inDirectory:nil];
+    NSArray *d = [[NSBundle mainBundle] pathsForResourcesOfType:@"wav" inDirectory:@"AudioTour"];
     
     for(NSString *s in d)
     {
@@ -46,6 +46,8 @@
         NSString *name = [components objectAtIndex:0];
         [self.tableData addObject:name];
     }
+    
+    
     //for the searching bar
     unfilteredWavs = self.tableData.copy;
 }
@@ -136,7 +138,6 @@
 // Cell Action Here
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Get row selected here
-    NSInteger *row = indexPath.row;
     [self performSegueWithIdentifier:@"audioplayer" sender:self];
     
 }
