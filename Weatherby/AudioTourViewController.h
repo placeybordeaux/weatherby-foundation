@@ -15,4 +15,11 @@
 
 - (void) fillTable:(NSArray*) arr;
 
+- (IBAction)pauseButton:(id)sender;
+- (IBAction)playButton:(id)sender;
+- (IBAction)next:(id)sender;
+- (IBAction)prev:(id)sender;
+-(void)PlayIndex:(int)index;
+
+
 @end

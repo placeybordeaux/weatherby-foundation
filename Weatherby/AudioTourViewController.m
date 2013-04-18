@@ -7,15 +7,17 @@
 //
 
 #import "AudioTourViewController.h"
-#import "AudioPlayerViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AudioTourViewController (){
     NSArray *unfilteredWavs;
+    AVAudioPlayer *avPlayer;
 }
 
 // Made array for datas
 @property (nonatomic, strong) NSMutableArray *tableData;
 @property (nonatomic, strong) NSMutableArray *tableName;
+@property int currentIndex;
 
 @end
 
@@ -26,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationController.toolbarHidden = NO;
     
     self.localSearchBar.delegate = self;
     self.localTableView.delegate = self;
@@ -138,16 +142,61 @@
 // Cell Action Here
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Get row selected here
-    [self performSegueWithIdentifier:@"audioplayer" sender:self];
+    _currentIndex = indexPath.item;
+    [self PlayIndex:_currentIndex];
+
+}
+
+-(void)PlayIndex:(int)index {
+    if(index >= 0 && index < [self.tableData count]){
+    NSString *audiofile = [self.tableData objectAtIndex:index];    
+    NSString *strPath=[[NSBundle mainBundle]pathForResource:audiofile ofType:@"wav"
+                                                inDirectory:@"AudioTour"];
+    NSURL *url=[NSURL fileURLWithPath:strPath];
+    NSError *error;
+    avPlayer =[[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    [avPlayer setNumberOfLoops:0];
+    [avPlayer setVolume:0.5];
+    [avPlayer play];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection: 0];
+
+    
+    [self.localTableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+    }else{
+        [avPlayer stop];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection: 0];
+        
+        
+        [self.localTableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+        
+        [self.localTableView deselectRowAtIndexPath:indexPath animated:NO];
+        
+    }
     
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"audioplayer"]) {
-        int indexPath = [self.localTableView indexPathForSelectedRow].row;
-        AudioPlayerViewController *destViewController = segue.destinationViewController;
-        destViewController.audiofile = [self.tableData objectAtIndex:indexPath];
+- (IBAction)pauseButton:(id)sender {
+    [avPlayer pause];
+}
+
+- (IBAction)playButton:(id)sender {
+    [avPlayer play];
+    
+}
+
+- (IBAction)prev:(id)sender {
+    if (avPlayer.currentTime < 3){
+        _currentIndex -= 1;
+        [self PlayIndex:_currentIndex];
+    }else {
+        avPlayer.currentTime = 0;
     }
+}
+
+
+- (IBAction)next:(id)sender {
+    _currentIndex += 1;
+    [self PlayIndex:_currentIndex];
 }
 
 @end

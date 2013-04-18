@@ -97,7 +97,6 @@
 		54F2003716D2E4B3001121DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F2003616D2E4B3001121DA /* ViewController.m */; };
 		54FBE0AD16E14624008C0B93 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBE0AC16E14624008C0B93 /* SystemConfiguration.framework */; };
 		54FBE0B116E14F26008C0B93 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FBE0B016E14F26008C0B93 /* CFNetwork.framework */; };
-		54FECFA816E675F800E52E31 /* AudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FECFA716E675F800E52E31 /* AudioPlayerViewController.m */; };
 		D945BE4416DF04EA005F6164 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D945BE4316DF04EA005F6164 /* logo.png */; };
 /* End PBXBuildFile section */
 
@@ -204,8 +203,6 @@
 		54F2003616D2E4B3001121DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		54FBE0AC16E14624008C0B93 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		54FBE0B016E14F26008C0B93 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		54FECFA616E675F800E52E31 /* AudioPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerViewController.h; sourceTree = "<group>"; };
-		54FECFA716E675F800E52E31 /* AudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerViewController.m; sourceTree = "<group>"; };
 		D945BE4316DF04EA005F6164 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -336,8 +333,6 @@
 				549A6611171FA8BF000AB6D1 /* History2ViewController.m */,
 				54F2003516D2E4B3001121DA /* ViewController.h */,
 				54F2003616D2E4B3001121DA /* ViewController.m */,
-				54FECFA616E675F800E52E31 /* AudioPlayerViewController.h */,
-				54FECFA716E675F800E52E31 /* AudioPlayerViewController.m */,
 				543121B216E917B1001B9A26 /* AudioTourViewController.h */,
 				543121B316E917B1001B9A26 /* AudioTourViewController.m */,
 				543121B516E9189C001B9A26 /* WinnersViewController.h */,
@@ -516,7 +511,6 @@
 				54F2002416D2E4B3001121DA /* main.m in Sources */,
 				54F2002816D2E4B3001121DA /* AppDelegate.m in Sources */,
 				54F2003716D2E4B3001121DA /* ViewController.m in Sources */,
-				54FECFA816E675F800E52E31 /* AudioPlayerViewController.m in Sources */,
 				543121B416E917B1001B9A26 /* AudioTourViewController.m in Sources */,
 				543121B716E9189C001B9A26 /* WinnersViewController.m in Sources */,
 				5434956316F809BE00BE0B98 /* ConservationViewController.m in Sources */,
