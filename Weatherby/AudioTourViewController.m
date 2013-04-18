@@ -51,6 +51,13 @@
         [self.tableData addObject:name];
     }
     
+    [self.tableData sortUsingComparator:^NSComparisonResult(id a, id b){
+        
+        NSString *aString = (NSString*) a;
+        NSString *bString = (NSString*) b;
+        return [[aString substringToIndex:2] intValue] > [[bString substringToIndex:2] intValue];
+    }];
+    
     
     //for the searching bar
     unfilteredWavs = self.tableData.copy;
