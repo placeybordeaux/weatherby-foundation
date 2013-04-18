@@ -84,18 +84,26 @@
         NSString* picContent = [NSString stringWithContentsOfFile:picPath
                                                       encoding:NSUTF8StringEncoding
                                                          error:NULL];
-        NSArray *broken = [picContent  componentsSeparatedByString: @"\n"];
-        for (int j = 0; j < [broken count]; j+=2) {
+        
+       
+        NSArray *broken = [picContent componentsSeparatedByString:@"\n"];
+        
+        for (int j = 0; j < [broken count]; j++) {
             
-            NSString *tempPath = [[NSBundle mainBundle] pathForResource:[broken objectAtIndex:j+1] ofType:@"jpg" inDirectory:nil];
+            NSArray *ary = [[broken objectAtIndex:j] componentsSeparatedByString:@"::"];
+            //NSLog(@"%d", [ary count]);
+            if ([ary count] > 1) {
+            NSString *tempPath = [[NSBundle mainBundle] pathForResource:[ary objectAtIndex:1] ofType:@"jpg" inDirectory:nil];
+            
             if (tempPath == NULL) {
-                NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-                NSString *combined = [NSString stringWithFormat:@"%@.jpg", [broken objectAtIndex:j+1]];
-                tempPath = [NSString stringWithFormat:@"%@/%@", [paths objectAtIndex:0], combined];
-                combined = [NSString stringWithFormat:@"%@?dl=1", [broken objectAtIndex:j]];
-                NSURL *tempUrl = [NSURL URLWithString: combined];
-                NSData *tempData = [NSData dataWithContentsOfURL:tempUrl];
-                [tempData writeToFile:tempPath atomically:YES];
+                NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+                NSString *combined = [NSString stringWithFormat:@"%@.jpg", [ary objectAtIndex:1]];
+                tempPath = [NSString stringWithFormat:@"%@/%@", docDir, combined];
+                combined = [NSString stringWithFormat:@"%@?dl=1", [ary objectAtIndex:0]];
+                NSData *data2 = [NSData dataWithContentsOfURL:[NSURL URLWithString:combined]];
+                                
+                [data2 writeToFile:tempPath atomically:YES];
+            }
             }
         }
     }

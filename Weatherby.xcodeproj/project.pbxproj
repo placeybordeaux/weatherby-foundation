@@ -45,6 +45,8 @@
 		5434959B16F8162E00BE0B98 /* 081.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5434958116F8162E00BE0B98 /* 081.wav */; };
 		546A058316DFC9D3009E488F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546A058216DFC9D3009E488F /* Security.framework */; };
 		546A058516DFC9DA009E488F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546A058416DFC9DA009E488F /* QuartzCore.framework */; };
+		549A6612171FA8BF000AB6D1 /* History2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549A6611171FA8BF000AB6D1 /* History2ViewController.m */; };
+		549A6614171FAB40000AB6D1 /* Group_2.tif in Resources */ = {isa = PBXBuildFile; fileRef = 549A6613171FAB40000AB6D1 /* Group_2.tif */; };
 		54BF864A171A042C00155ABC /* WinnerBios.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54BF8649171A042C00155ABC /* WinnerBios.txt */; };
 		54BF8685171A0D9300155ABC /* 1956.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54BF864F171A0D9300155ABC /* 1956.jpg */; };
 		54BF8686171A0D9300155ABC /* 1957.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54BF8650171A0D9300155ABC /* 1957.jpg */; };
@@ -167,6 +169,9 @@
 		5434958116F8162E00BE0B98 /* 081.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 081.wav; path = ../Audio/081.wav; sourceTree = "<group>"; };
 		546A058216DFC9D3009E488F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		546A058416DFC9DA009E488F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		549A6610171FA8BF000AB6D1 /* History2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = History2ViewController.h; sourceTree = "<group>"; };
+		549A6611171FA8BF000AB6D1 /* History2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = History2ViewController.m; sourceTree = "<group>"; };
+		549A6613171FAB40000AB6D1 /* Group_2.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Group_2.tif; sourceTree = "<group>"; };
 		54BF8649171A042C00155ABC /* WinnerBios.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WinnerBios.txt; sourceTree = "<group>"; };
 		54BF864F171A0D9300155ABC /* 1956.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1956.jpg; sourceTree = "<group>"; };
 		54BF8650171A0D9300155ABC /* 1957.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1957.jpg; sourceTree = "<group>"; };
@@ -377,6 +382,8 @@
 				54F2003216D2E4B3001121DA /* MainStoryboard_iPad.storyboard */,
 				4B46D6A5171C9AFB0079F6C8 /* HistoryViewController.h */,
 				4B46D6A6171C9AFB0079F6C8 /* HistoryViewController.m */,
+				549A6610171FA8BF000AB6D1 /* History2ViewController.h */,
+				549A6611171FA8BF000AB6D1 /* History2ViewController.m */,
 				54F2003516D2E4B3001121DA /* ViewController.h */,
 				54F2003616D2E4B3001121DA /* ViewController.m */,
 				54FECFA616E675F800E52E31 /* AudioPlayerViewController.h */,
@@ -403,6 +410,7 @@
 				5432D9C3171DE958003EAA3A /* UpdateCon.txt */,
 				5432D9C1171DE748003EAA3A /* UpdateWin.txt */,
 				4B46D6AF171CC4940079F6C8 /* Group_1.tif */,
+				549A6613171FAB40000AB6D1 /* Group_2.tif */,
 				4B46D6AD171CBDCD0079F6C8 /* history.txt */,
 				54BF86BB171A28DF00155ABC /* ConservationEfforts.txt */,
 				54BF86BC171A28DF00155ABC /* Efforts.txt */,
@@ -594,6 +602,7 @@
 				5432D9C2171DE748003EAA3A /* UpdateWin.txt in Resources */,
 				5432D9C4171DE958003EAA3A /* UpdateCon.txt in Resources */,
 				5423CA07171DFDC000088CF7 /* Pictures.txt in Resources */,
+				549A6614171FAB40000AB6D1 /* Group_2.tif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +623,7 @@
 				54C2E6991700CF0000C0FA33 /* SingleEffortViewController.m in Sources */,
 				54C2E69C1700D60800C0FA33 /* SingleWinnerViewController.m in Sources */,
 				4B46D6A7171C9AFB0079F6C8 /* HistoryViewController.m in Sources */,
+				549A6612171FA8BF000AB6D1 /* History2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

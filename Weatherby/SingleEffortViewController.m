@@ -12,6 +12,7 @@
 
 @synthesize title_info;
 @synthesize labelField;
+@synthesize state;
 
 - (void)viewDidLoad
 {
@@ -30,9 +31,9 @@
     for (int i = 0; i < [data count]; i++) {
         NSString *str = [data objectAtIndex:i];
         NSArray *ary = [str componentsSeparatedByString: @"::"];
-//        if ([[ary objectAtIndex:0] intValue] == [[winnerdate objectAtIndex:0] intValue]) {
-//            info = [ary objectAtIndex:1];
-//        }
+        if ([state isEqualToString:[ary objectAtIndex:0]]) {
+            info = [NSString stringWithFormat:@"Located in the Great State of %@\n\t%@", state, [ary objectAtIndex:2]];
+        }
     }
     
     [self.labelField setText: info];

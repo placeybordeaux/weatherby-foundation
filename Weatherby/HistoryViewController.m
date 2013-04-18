@@ -12,13 +12,11 @@
 @implementation HistoryViewController
 @synthesize title_info;
 @synthesize labelField;
-@synthesize labelField2;
 @synthesize sv;
 @synthesize img;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [sv setContentSize:CGSizeMake(320, 1000)];
     self.title = title_info;
     
     // Read content from local file
@@ -32,20 +30,13 @@
     {
         NSArray *data = [content componentsSeparatedByString: @"\n"];
         NSString *info=@"";
-        NSString *info2=@"";
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 11; i++) {
             info= [info stringByAppendingString: [data objectAtIndex:i]];
-        }
-        
-        for (int i = 6; i < [data count]; i++) {
-            info2= [info2 stringByAppendingString: [data objectAtIndex:i]];
         }
         
         [self.labelField setText: info];
         [self.labelField sizeToFit];
         
-        [self.labelField2 setText: info2];
-        [self.labelField2 sizeToFit];
     }
     
     NSString* imgPath = [[NSBundle mainBundle] pathForResource: @"Group_1" ofType:@"tif" inDirectory:nil];

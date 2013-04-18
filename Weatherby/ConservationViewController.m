@@ -16,6 +16,7 @@
 
 // Made array for datas
 @property (nonatomic, strong) NSMutableArray *tableData;
+@property (nonatomic, strong) NSMutableArray *states;
 
 @end
 
@@ -86,10 +87,14 @@
     
     // Break down string and store it into the array
     self.tableData = [NSMutableArray array];
+    self.states = [NSMutableArray array];
     NSArray *data = [content componentsSeparatedByString: @"\n"];
     for (int i = 0; i < [data count]; i++) {
         NSString *str = [data objectAtIndex:i];
-        [self.tableData addObject:str];
+        NSArray *tmp = [str componentsSeparatedByString:@"::"];
+        [self.tableData addObject:[tmp objectAtIndex:1]];
+        [self.states addObject:[tmp objectAtIndex:0]];
+
     }
     
     unfilteredEfforts = self.tableData.copy;
@@ -189,6 +194,7 @@
         int indexPath = [self.localTableView indexPathForSelectedRow].row;
         SingleEffortViewController *destViewController = segue.destinationViewController;
         destViewController.title_info = [self.tableData objectAtIndex:indexPath];
+        destViewController.state = [self.states objectAtIndex:indexPath];
     }
 }
 

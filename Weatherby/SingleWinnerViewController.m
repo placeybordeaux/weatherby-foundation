@@ -52,7 +52,7 @@
                 NSString *directory = [tmpPath objectAtIndex:0];
                 imgPath = [directory stringByAppendingPathComponent:combined];
             }
-            NSLog(@"%@", imgPath);
+            //NSLog(@"%@", imgPath);
             UIImage *image = [[UIImage alloc] initWithContentsOfFile:imgPath];
             [img setImage: image];
             img.contentMode = UIViewContentModeScaleAspectFit;

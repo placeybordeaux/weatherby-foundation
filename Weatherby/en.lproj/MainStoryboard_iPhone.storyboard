@@ -414,35 +414,41 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pB7-QN-WsP">
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2v-pR-gHc">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="327" id="7eM-v2-mTR"/>
-                                            <constraint firstAttribute="height" constant="504" id="aPy-99-DD2"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njt-0e-v1K">
                                 <constraints>
-                                    <constraint firstItem="L2v-pR-gHc" firstAttribute="top" secondItem="pB7-QN-WsP" secondAttribute="top" constant="77" id="8nW-1c-N0f"/>
-                                    <constraint firstAttribute="bottom" secondItem="L2v-pR-gHc" secondAttribute="bottom" constant="-77" id="RJn-G5-JIZ"/>
-                                    <constraint firstItem="L2v-pR-gHc" firstAttribute="leading" secondItem="pB7-QN-WsP" secondAttribute="leading" constant="10" id="gce-Gf-Jij"/>
-                                    <constraint firstAttribute="trailing" secondItem="L2v-pR-gHc" secondAttribute="trailing" constant="-10" id="sJR-H7-ZwV"/>
+                                    <constraint firstAttribute="width" constant="314" id="MPd-1T-iJo"/>
+                                    <constraint firstAttribute="height" constant="221" id="pAi-Pn-exU"/>
                                 </constraints>
-                            </scrollView>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-77-nOe">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="WFG-cX-NZh"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pB7-QN-WsP" firstAttribute="top" secondItem="8mD-ka-RbX" secondAttribute="top" type="default" id="9AF-bx-VmN"/>
-                            <constraint firstItem="pB7-QN-WsP" firstAttribute="leading" secondItem="8mD-ka-RbX" secondAttribute="leading" constant="-7" id="OGK-GT-Fsn"/>
-                            <constraint firstItem="pB7-QN-WsP" firstAttribute="trailing" secondItem="8mD-ka-RbX" secondAttribute="trailing" type="default" id="ZRP-bI-zE7"/>
-                            <constraint firstItem="pB7-QN-WsP" firstAttribute="bottom" secondItem="8mD-ka-RbX" secondAttribute="bottom" type="default" id="a7G-fh-yuT"/>
+                            <constraint firstItem="dR4-77-nOe" firstAttribute="centerX" secondItem="8mD-ka-RbX" secondAttribute="centerX" type="default" id="41Y-1E-WNQ"/>
+                            <constraint firstItem="dR4-77-nOe" firstAttribute="leading" secondItem="Njt-0e-v1K" secondAttribute="leading" type="default" id="Rdk-un-yTm"/>
+                            <constraint firstItem="dR4-77-nOe" firstAttribute="trailing" secondItem="Njt-0e-v1K" secondAttribute="trailing" type="default" id="WHd-Gb-i75"/>
+                            <constraint firstItem="dR4-77-nOe" firstAttribute="top" secondItem="Njt-0e-v1K" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hT3-de-9JF"/>
+                            <constraint firstItem="dR4-77-nOe" firstAttribute="top" secondItem="8mD-ka-RbX" secondAttribute="top" constant="239" id="uIv-bd-R0T"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="History" id="79P-xO-FYf"/>
+                    <navigationItem key="navigationItem" title="History" id="79P-xO-FYf">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="Hwr-Gs-zxt">
+                            <connections>
+                                <segue destination="iun-CV-kB8" kind="push" id="S82-Ko-K8O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="img" destination="L2v-pR-gHc" id="qdI-TD-PPC"/>
-                        <outlet property="sv" destination="pB7-QN-WsP" id="iHm-Tv-smq"/>
+                        <outlet property="img" destination="Njt-0e-v1K" id="tL5-8y-Y3l"/>
+                        <outlet property="labelField" destination="dR4-77-nOe" id="OB4-be-yxt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNK-vy-Cw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -455,6 +461,49 @@
                 </textView>
             </objects>
             <point key="canvasLocation" x="-424" y="-139"/>
+        </scene>
+        <!--History2 View Controller - History-->
+        <scene sceneID="rld-Tl-mDy">
+            <objects>
+                <viewController id="iun-CV-kB8" customClass="History2ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IXO-bd-F5a">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAe-1W-fFw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Euo-mU-aEm"/>
+                                    <constraint firstAttribute="width" constant="314" id="SDa-Ix-5nT"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfM-qA-WkD">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="TWb-b3-xH0"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vfM-qA-WkD" firstAttribute="leading" secondItem="SAe-1W-fFw" secondAttribute="leading" type="default" id="YS5-Pi-mkv"/>
+                            <constraint firstItem="SAe-1W-fFw" firstAttribute="top" secondItem="IXO-bd-F5a" secondAttribute="top" constant="10" id="cyH-6s-ytW"/>
+                            <constraint firstItem="vfM-qA-WkD" firstAttribute="top" secondItem="SAe-1W-fFw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="eqK-Te-ERH"/>
+                            <constraint firstItem="vfM-qA-WkD" firstAttribute="trailing" secondItem="SAe-1W-fFw" secondAttribute="trailing" type="default" id="ik0-cy-TN0"/>
+                            <constraint firstItem="vfM-qA-WkD" firstAttribute="centerX" secondItem="IXO-bd-F5a" secondAttribute="centerX" type="default" id="sgo-SF-cZO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="History" id="5D5-oy-InT"/>
+                    <connections>
+                        <outlet property="img" destination="SAe-1W-fFw" id="dVr-Mu-yIA"/>
+                        <outlet property="labelField" destination="vfM-qA-WkD" id="gXg-P7-Syz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7X-nk-g8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="-104"/>
         </scene>
     </scenes>
     <resources>
@@ -487,12 +536,19 @@
                 <relationship kind="outlet" name="localTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
+        <class className="History2ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/History2ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="img" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="labelField" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="sv" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
         <class className="HistoryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HistoryViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="img" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="labelField" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="labelField2" candidateClass="UITextView"/>
                 <relationship kind="outlet" name="sv" candidateClass="UIScrollView"/>
             </relationships>
         </class>
