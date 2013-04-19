@@ -106,6 +106,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main Menu" id="FPg-j3-SdH"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -327,6 +328,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Conservation Efforts" id="UGa-KV-PZV"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="localSearchBar" destination="zux-v2-6hG" id="sPD-s1-ljl"/>
                         <outlet property="localTableView" destination="NdG-Jn-QYS" id="mgO-nW-Erw"/>
@@ -360,6 +362,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Conservation" id="45j-k8-rY8"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="labelField" destination="gsQ-EB-XyJ" id="vGQ-cJ-Szx"/>
                     </connections>
@@ -379,14 +382,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njt-0e-v1K">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="314" id="aXe-Yf-mrm"/>
-                                    <constraint firstAttribute="height" constant="221" id="l4K-Fp-4kG"/>
+                                    <constraint firstAttribute="height" constant="212" id="mh5-CY-zHE"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-77-nOe">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="J7A-yM-c1q"/>
-                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -395,9 +395,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dR4-77-nOe" firstAttribute="trailing" secondItem="Njt-0e-v1K" secondAttribute="trailing" type="default" id="0YB-oy-glP"/>
-                            <constraint firstItem="dR4-77-nOe" firstAttribute="top" secondItem="Njt-0e-v1K" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="OKu-aP-goQ"/>
-                            <constraint firstItem="Njt-0e-v1K" firstAttribute="top" secondItem="8mD-ka-RbX" secondAttribute="top" constant="10" id="Q0b-c5-kVl"/>
-                            <constraint firstItem="Njt-0e-v1K" firstAttribute="centerX" secondItem="8mD-ka-RbX" secondAttribute="centerX" type="default" id="W29-s7-UCE"/>
+                            <constraint firstItem="Njt-0e-v1K" firstAttribute="top" secondItem="8mD-ka-RbX" secondAttribute="top" type="default" id="5C2-BT-Ydt"/>
+                            <constraint firstItem="dR4-77-nOe" firstAttribute="bottom" secondItem="8mD-ka-RbX" secondAttribute="bottom" type="default" id="K1c-oz-viQ"/>
+                            <constraint firstItem="dR4-77-nOe" firstAttribute="top" secondItem="Njt-0e-v1K" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="bk5-An-CFP"/>
+                            <constraint firstItem="dR4-77-nOe" firstAttribute="centerX" secondItem="8mD-ka-RbX" secondAttribute="centerX" type="default" id="k00-ZO-UYT"/>
                             <constraint firstItem="Njt-0e-v1K" firstAttribute="leading" secondItem="dR4-77-nOe" secondAttribute="leading" type="default" id="pcq-8o-lBu"/>
                         </constraints>
                     </view>
@@ -408,6 +409,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="img" destination="Njt-0e-v1K" id="tL5-8y-Y3l"/>
                         <outlet property="labelField" destination="dR4-77-nOe" id="OB4-be-yxt"/>
@@ -434,14 +436,14 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAe-1W-fFw">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="GNt-Sf-xr3"/>
                                     <constraint firstAttribute="width" constant="314" id="U41-wR-agf"/>
+                                    <constraint firstAttribute="height" constant="208" id="Zf1-bx-Vt3"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfM-qA-WkD">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="270" id="bbl-pU-2rj"/>
+                                    <constraint firstAttribute="width" constant="314" id="LWX-AV-llu"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -450,14 +452,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SAe-1W-fFw" firstAttribute="top" secondItem="IXO-bd-F5a" secondAttribute="top" constant="10" id="BXE-JB-DsY"/>
-                            <constraint firstItem="SAe-1W-fFw" firstAttribute="leading" secondItem="vfM-qA-WkD" secondAttribute="leading" type="default" id="Nhu-AW-Hua"/>
-                            <constraint firstItem="vfM-qA-WkD" firstAttribute="top" secondItem="SAe-1W-fFw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qTm-Hu-GiB"/>
-                            <constraint firstItem="SAe-1W-fFw" firstAttribute="trailing" secondItem="vfM-qA-WkD" secondAttribute="trailing" type="default" id="qtG-oL-zuD"/>
-                            <constraint firstItem="vfM-qA-WkD" firstAttribute="centerX" secondItem="IXO-bd-F5a" secondAttribute="centerX" type="default" id="tgG-ZJ-hwx"/>
+                            <constraint firstItem="SAe-1W-fFw" firstAttribute="top" secondItem="IXO-bd-F5a" secondAttribute="top" type="default" id="5cZ-fu-cbh"/>
+                            <constraint firstItem="vfM-qA-WkD" firstAttribute="centerX" secondItem="IXO-bd-F5a" secondAttribute="centerX" type="default" id="M2q-1A-Aju"/>
+                            <constraint firstItem="vfM-qA-WkD" firstAttribute="bottom" secondItem="IXO-bd-F5a" secondAttribute="bottom" type="default" id="Y4f-qZ-X6m"/>
+                            <constraint firstItem="SAe-1W-fFw" firstAttribute="leading" secondItem="IXO-bd-F5a" secondAttribute="leading" type="default" id="oVs-8E-W3o"/>
+                            <constraint firstItem="vfM-qA-WkD" firstAttribute="top" secondItem="SAe-1W-fFw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tPz-C0-MRS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="5D5-oy-InT"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="img" destination="SAe-1W-fFw" id="dVr-Mu-yIA"/>
                         <outlet property="labelField" destination="vfM-qA-WkD" id="gXg-P7-Syz"/>
