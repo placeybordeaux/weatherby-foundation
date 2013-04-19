@@ -97,6 +97,7 @@
 
     }
     
+    
     unfilteredEfforts = self.tableData.copy;
     
 }

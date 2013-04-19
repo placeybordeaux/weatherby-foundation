@@ -32,7 +32,7 @@
         NSString *str = [data objectAtIndex:i];
         NSArray *ary = [str componentsSeparatedByString: @"::"];
         if ([state isEqualToString:[ary objectAtIndex:0]]) {
-            info = [NSString stringWithFormat:@"Located in the Great State of %@\n\t%@", state, [ary objectAtIndex:2]];
+            info = [NSString stringWithFormat:@"\n\n%@\nLocated in %@\n\n\t%@", title_info, state, [ary objectAtIndex:2]];
         }
     }
     

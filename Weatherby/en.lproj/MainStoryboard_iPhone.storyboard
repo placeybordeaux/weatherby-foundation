@@ -449,13 +449,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAe-1W-fFw">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="314" id="U41-wR-agf"/>
-                                    <constraint firstAttribute="height" constant="208" id="Zf1-bx-Vt3"/>
+                                    <constraint firstAttribute="height" constant="200" id="aof-6K-AQq"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfM-qA-WkD">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="LWX-AV-llu"/>
+                                    <constraint firstAttribute="height" constant="275" id="sLU-79-pw2"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -464,11 +464,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SAe-1W-fFw" firstAttribute="top" secondItem="IXO-bd-F5a" secondAttribute="top" type="default" id="5cZ-fu-cbh"/>
-                            <constraint firstItem="vfM-qA-WkD" firstAttribute="centerX" secondItem="IXO-bd-F5a" secondAttribute="centerX" type="default" id="M2q-1A-Aju"/>
-                            <constraint firstItem="vfM-qA-WkD" firstAttribute="bottom" secondItem="IXO-bd-F5a" secondAttribute="bottom" type="default" id="Y4f-qZ-X6m"/>
-                            <constraint firstItem="SAe-1W-fFw" firstAttribute="leading" secondItem="IXO-bd-F5a" secondAttribute="leading" type="default" id="oVs-8E-W3o"/>
-                            <constraint firstItem="vfM-qA-WkD" firstAttribute="top" secondItem="SAe-1W-fFw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tPz-C0-MRS"/>
+                            <constraint firstItem="SAe-1W-fFw" firstAttribute="centerX" secondItem="IXO-bd-F5a" secondAttribute="centerX" type="default" id="7qt-8p-N6M"/>
+                            <constraint firstItem="SAe-1W-fFw" firstAttribute="leading" secondItem="vfM-qA-WkD" secondAttribute="leading" type="default" id="Jq6-YB-TNK"/>
+                            <constraint firstItem="SAe-1W-fFw" firstAttribute="trailing" secondItem="vfM-qA-WkD" secondAttribute="trailing" type="default" id="rfK-rI-Pqm"/>
+                            <constraint firstItem="vfM-qA-WkD" firstAttribute="top" secondItem="IXO-bd-F5a" secondAttribute="top" constant="220" id="ucr-51-gIz"/>
+                            <constraint firstItem="SAe-1W-fFw" firstAttribute="top" secondItem="IXO-bd-F5a" secondAttribute="top" constant="10" id="xc2-Cm-oy5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="5D5-oy-InT"/>
