@@ -64,7 +64,7 @@
     [[AVAudioSession sharedInstance] setActive: YES error: &setCategoryError];
     
     [self.navigationController setToolbarHidden:NO animated:YES];
-
+    
     
     self.localSearchBar.delegate = self;
     self.localTableView.delegate = self;
@@ -186,25 +186,26 @@
     // Get row selected here
     _currentIndex = indexPath.item;
     [self PlayIndex:_currentIndex];
-
+    
 }
 
 -(void)PlayIndex:(int)index {
     if(index >= 0 && index < [self.tableData count]){
-    NSString *audiofile = [self.tableData objectAtIndex:index];    
-    NSString *strPath=[[NSBundle mainBundle]pathForResource:audiofile ofType:@"wav"
-                                                inDirectory:@"AudioTour"];
-    NSURL *url=[NSURL fileURLWithPath:strPath];
-    NSError *error;
-    avPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-
-    [avPlayer setNumberOfLoops:0];
-    [avPlayer setVolume:0.5];
-    [avPlayer play];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection: 0];
-
-    
-    [self.localTableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+        NSString *audiofile = [self.tableData objectAtIndex:index];
+        NSString *strPath=[[NSBundle mainBundle]pathForResource:audiofile ofType:@"wav"
+                                                    inDirectory:@"AudioTour"];
+        NSURL *url=[NSURL fileURLWithPath:strPath];
+        NSError *error;
+        avPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+        
+        [avPlayer setNumberOfLoops:0];
+        [avPlayer setVolume:0.5];
+        [avPlayer play];
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection: 0];
+        
+        
+        [self.localTableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+        [self.localTableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
     }else{
         [avPlayer stop];
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection: 0];
