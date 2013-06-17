@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		366AAFC9176F5A2B00A307D2 /* logo(57x57).png in Resources */ = {isa = PBXBuildFile; fileRef = 366AAFC8176F5A2B00A307D2 /* logo(57x57).png */; };
+		366AAFCB176F5FC000A307D2 /* Icon(57x57).png in Resources */ = {isa = PBXBuildFile; fileRef = 366AAFCA176F5FC000A307D2 /* Icon(57x57).png */; };
 		4B46D6A7171C9AFB0079F6C8 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B46D6A6171C9AFB0079F6C8 /* HistoryViewController.m */; };
 		4B46D6AE171CBDCD0079F6C8 /* history.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B46D6AD171CBDCD0079F6C8 /* history.txt */; };
 		4B46D6B0171CC4940079F6C8 /* Group_1.tif in Resources */ = {isa = PBXBuildFile; fileRef = 4B46D6AF171CC4940079F6C8 /* Group_1.tif */; };
@@ -102,6 +104,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		366AAFC8176F5A2B00A307D2 /* logo(57x57).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo(57x57).png"; sourceTree = "<group>"; };
+		366AAFCA176F5FC000A307D2 /* Icon(57x57).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon(57x57).png"; sourceTree = "<group>"; };
 		4B46D6A5171C9AFB0079F6C8 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		4B46D6A6171C9AFB0079F6C8 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		4B46D6AD171CBDCD0079F6C8 /* history.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = history.txt; sourceTree = "<group>"; };
@@ -292,6 +296,8 @@
 		54F2000B16D2E4B3001121DA = {
 			isa = PBXGroup;
 			children = (
+				366AAFCA176F5FC000A307D2 /* Icon(57x57).png */,
+				366AAFC8176F5A2B00A307D2 /* logo(57x57).png */,
 				54F2001D16D2E4B3001121DA /* Weatherby */,
 				54F2001616D2E4B3001121DA /* Frameworks */,
 				54F2001516D2E4B3001121DA /* Products */,
@@ -502,6 +508,8 @@
 				5401E8471721D6BA00775DE2 /* WinnerBios.txt in Resources */,
 				5401E8481721D6BA00775DE2 /* Winners.txt in Resources */,
 				5401E84A1721DDA700775DE2 /* Group_2.tif in Resources */,
+				366AAFC9176F5A2B00A307D2 /* logo(57x57).png in Resources */,
+				366AAFCB176F5FC000A307D2 /* Icon(57x57).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
